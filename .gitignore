@@ -5,3 +5,7 @@
 bin/
 build/
 lib/
+
+# Git Godot plugin
+git_api.gdnlib
+git_api.gdns

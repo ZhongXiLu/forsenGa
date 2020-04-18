@@ -11,7 +11,7 @@ export var fire_rate = 0.5
 const UP = Vector2(0, -1)   # which direction is "up"
 
 var motion = Vector2()
-var bullet = preload("res://Scenes/ObjectScenes/Bullet.tscn")
+var bullet = preload("res://Scenes/ObjectScenes/pepeL.tscn")
 var can_fire = true
 
 

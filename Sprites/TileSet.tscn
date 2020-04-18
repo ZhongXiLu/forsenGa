@@ -11,7 +11,7 @@ extents = Vector2( 4, 4 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 0, 8, 8, 8 )
+region_rect = Rect2( 24, 8, 8, 8 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -28,7 +28,7 @@ position = Vector2( 8, 0 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 8, 8, 8, 8 )
+region_rect = Rect2( 32, 8, 8, 8 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -45,7 +45,7 @@ position = Vector2( 0, 8 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 0, 16, 8, 8 )
+region_rect = Rect2( 24, 16, 8, 8 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -62,7 +62,7 @@ position = Vector2( 0, 16 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 0, 24, 8, 8 )
+region_rect = Rect2( 24, 24, 8, 8 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -79,7 +79,7 @@ position = Vector2( 8, 16 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 8, 24, 8, 8 )
+region_rect = Rect2( 32, 24, 8, 8 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -96,7 +96,7 @@ position = Vector2( 8, 8 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 8, 16, 8, 8 )
+region_rect = Rect2( 40, 0, 8, 8 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -193,30 +193,12 @@ visible = false
 position = Vector2( 4, 4 )
 shape = SubResource( 1 )
 
-[node name="6" type="Sprite" parent="."]
-position = Vector2( 8, -8.55873 )
-texture = ExtResource( 1 )
-centered = false
-flip_h = true
-region_enabled = true
-region_rect = Rect2( 16, 24, 8, 8 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="6"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="6/StaticBody2D"]
-visible = false
-position = Vector2( 4, 4 )
-shape = SubResource( 1 )
-
 [node name="7" type="Sprite" parent="."]
 position = Vector2( 16, -8.55873 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
-region_rect = Rect2( 16, 8, 8, 8 )
+region_rect = Rect2( 40, 8, 8, 8 )
 __meta__ = {
 "_edit_group_": true
 }

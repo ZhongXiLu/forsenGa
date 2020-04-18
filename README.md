@@ -1,1 +1,1 @@
-# forsenGa <img src="/Sprites/forsenGa.png" height=28 />
+# forsenGa <img src="icon.png" height=28 />

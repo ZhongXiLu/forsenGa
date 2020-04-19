@@ -6,10 +6,11 @@ export var fire_rate = 2
 
 var bullet = preload("res://Scenes/ObjectScenes/CD.tscn")
 var can_fire = true
-    
+var dead = false
+
 
 func _process(delta):
-    if can_fire:
+    if can_fire and !dead:
         can_fire = false
         
         var bullet_instances = []
@@ -40,3 +41,14 @@ func _process(delta):
 
         yield(get_tree().create_timer(fire_rate), "timeout")
         can_fire = true
+
+
+func _physics_process(_delta):
+    # Fall down to the ground if dead
+    if dead:
+        move_and_collide(Vector2(0, 5))
+
+
+func _on_Stats_no_health():
+    dead = true
+    $AnimatedSprite.play("dead")

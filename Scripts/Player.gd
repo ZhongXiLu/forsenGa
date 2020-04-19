@@ -22,7 +22,7 @@ func _process(delta):
         
         bullet_instance.rotation = (get_angle_to(get_global_mouse_position()) + rotation)
         if bullet_instance.rotation > 1.5 or bullet_instance.rotation < -1.5:
-            bullet_instance.get_child(0).flip_v = true
+            bullet_instance.get_node("Sprite").flip_v = true
         
         bullet_instance.position = global_position
         get_parent().add_child(bullet_instance)
@@ -61,3 +61,8 @@ func _physics_process(_delta):
             motion.x = lerp(motion.x, 0, 0.05)
     
     motion = move_and_slide(motion, UP)
+
+
+func _on_Stats_no_health():
+    # TODO: player died
+    print("Player died!")

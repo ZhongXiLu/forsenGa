@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Three Chain Links – Drive Fast.ogg-b6b64a451e895f14db821115d57a7982.oggstr"
+
+[deps]
+
+source_file="res://Audio/BGM/Three Chain Links – Drive Fast.ogg"
+dest_files=[ "res://.import/Three Chain Links – Drive Fast.ogg-b6b64a451e895f14db821115d57a7982.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

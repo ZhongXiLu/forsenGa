@@ -8,3 +8,4 @@ func _on_Bullet_body_entered(body):
         body.get_node("Stats").health -= 1
         
     queue_free()
+

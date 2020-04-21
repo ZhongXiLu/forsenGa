@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/violencespeedmomentum.wav-36d47015f31120219b6939cf07921bf3.sample"
+
+[deps]
+
+source_file="res://Audio/Samples/Doc/violencespeedmomentum.wav"
+dest_files=[ "res://.import/violencespeedmomentum.wav-36d47015f31120219b6939cf07921bf3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

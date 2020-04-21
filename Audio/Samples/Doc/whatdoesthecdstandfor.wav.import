@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/whatdoesthecdstandfor.wav-fc0c6eaec7338e7ead69e208e95d2075.sample"
+
+[deps]
+
+source_file="res://Audio/Samples/Doc/whatdoesthecdstandfor.wav"
+dest_files=[ "res://.import/whatdoesthecdstandfor.wav-fc0c6eaec7338e7ead69e208e95d2075.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

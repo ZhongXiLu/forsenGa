@@ -6,6 +6,7 @@ export var attack_rate = 5
 
 var can_attack = false
 var dead = false
+var next_attacks = []
 
 
 func _ready():
@@ -18,9 +19,14 @@ func _process(delta):
     if can_attack and !dead:
         can_attack = false
 
-        if attacks:
-            add_child(attacks[0].instance())
-
+        if next_attacks.empty():
+            # Create new permutation of attacks
+            next_attacks = range(attacks.size())
+            next_attacks.shuffle()
+            
+        add_child(attacks[next_attacks.pop_front()].instance())
+        
+        # TODO: wait for attack to finish
         yield(get_tree().create_timer(attack_rate), "timeout")
         can_attack = true
 

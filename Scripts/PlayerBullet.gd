@@ -11,4 +11,4 @@ func _on_Bullet_body_entered(body):
         ppPoof_instance.flip_v = true
     get_parent().add_child(ppPoof_instance)
     
-    ._on_Bullet_body_entered(body)
+    ._on_body_entered(body)

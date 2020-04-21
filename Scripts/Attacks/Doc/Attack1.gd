@@ -1,7 +1,7 @@
 extends Node
 
-export var initial_bullet_speed = 50
-export var bullet_speed = 2500
+export var initial_bullet_speed = 100
+export var bullet_speed = 3000
 
 var bullet = preload("res://Scenes/ObjectScenes/CD.tscn")
 var bullet_instances = []
@@ -31,8 +31,9 @@ func _ready():
     # Speed the bullet up after delay
     var speed_factor = bullet_speed / initial_bullet_speed
     for bullet_instance in bullet_instances:
-        bullet_instance.linear_velocity.x *= speed_factor
-        bullet_instance.linear_velocity.y *= speed_factor
+        if weakref(bullet_instance).get_ref():     # possible that bullet gets freed on creation
+            bullet_instance.linear_velocity.x *= speed_factor
+            bullet_instance.linear_velocity.y *= speed_factor
 
 func _process(_delta):
     if bullet_instances.empty():

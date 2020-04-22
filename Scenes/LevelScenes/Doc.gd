@@ -10,6 +10,7 @@ var next_attacks = []
 
 
 func _ready():
+    randomize()     # randomize seed here
     $Introduction.play()
     yield(get_tree().create_timer(5), "timeout")
     can_attack = true

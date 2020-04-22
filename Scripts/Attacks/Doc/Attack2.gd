@@ -1,6 +1,6 @@
 extends Node
 
-export var drop_speed = 1000
+export var drop_speed = 1400
 export var width_arena = 1100
 
 var spam = preload("res://Scenes/ObjectScenes/Spam.tscn")

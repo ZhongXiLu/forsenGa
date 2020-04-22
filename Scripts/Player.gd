@@ -5,6 +5,9 @@ export var max_speed = 600
 export var acceleration = 80
 export var jump_height = 1200
 
+export var dash_speed = 1500
+export var dash_rate = 0.6
+
 export var bullet_speed = 5000
 export var fire_rate = 0.5
 
@@ -13,6 +16,8 @@ const UP = Vector2(0, -1)   # which direction is "up"
 var motion = Vector2()
 var bullet = preload("res://Scenes/ObjectScenes/pepeL.tscn")
 var can_fire = true
+var can_dash = true     # possible to dash now (~dash rate)
+var dashing = false     # player is currently dashing
 
 
 func _process(delta):
@@ -40,26 +45,37 @@ func _process(delta):
 
 func _physics_process(_delta):
     
-    var friction = false
-    motion.y += gravity
-    if Input.is_action_pressed("ui_right"):
-        motion.x = min(motion.x + acceleration, max_speed)
-        $AnimatedSprite.flip_h = false
-    elif Input.is_action_pressed("ui_left"):
-        motion.x = max(motion.x - acceleration, -max_speed)
-        $AnimatedSprite.flip_h = true
-    else:
-        friction = true
-    
-    if is_on_floor():
-        if Input.is_action_pressed("ui_up"):
-            motion.y = -jump_height
-        if friction:
-            motion.x = lerp(motion.x, 0, 0.1)
-    else:
-        if friction:
-            motion.x = lerp(motion.x, 0, 0.05)
-    
+    if !dashing:
+        var friction = false
+        motion.y += gravity
+        if Input.is_action_pressed("ui_right"):
+            motion.x = min(motion.x + acceleration, max_speed)
+            $AnimatedSprite.flip_h = false
+        elif Input.is_action_pressed("ui_left"):
+            motion.x = max(motion.x - acceleration, -max_speed)
+            $AnimatedSprite.flip_h = true
+        else:
+            friction = true
+        
+        if is_on_floor():
+            if Input.is_action_pressed("ui_up"):
+                motion.y = -jump_height
+            if friction:
+                motion.x = lerp(motion.x, 0, 0.1)
+        else:
+            if friction:
+                motion.x = lerp(motion.x, 0, 0.05)
+                
+        if Input.is_action_just_pressed("dash") and can_dash:
+            can_dash = false
+            dashing = true
+            motion.x = sign(motion.x) * dash_speed
+            motion.y = 0
+            yield(get_tree().create_timer(0.2), "timeout")
+            dashing = false
+            yield(get_tree().create_timer(dash_rate), "timeout")
+            can_dash = true
+        
     motion = move_and_slide(motion, UP)
 
 

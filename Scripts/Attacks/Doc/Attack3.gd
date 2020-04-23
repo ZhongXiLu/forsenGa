@@ -14,7 +14,7 @@ func _ready():
     var sprite_size_offset = get_node("../../AnimatedSprite").frames.get_frame("idle", 0).get_width() * 1.2
     var old_position = get_node("../../").global_position
     
-    # TODO: make the Doc move across the screen?
+    # TODO: speed up attack
     
     for _i in range(30):
         var bullet_instance = bullet.instance()

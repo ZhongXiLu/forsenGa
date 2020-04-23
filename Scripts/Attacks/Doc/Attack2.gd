@@ -28,7 +28,7 @@ func _ready():
         spam_instance.position = target_position
         spam_instance.get_node("AnimatedSprite").play()
         add_child(spam_instance)
-        yield(get_tree().create_timer(1, false), "timeout")
+        yield(get_tree().create_timer(0.8, false), "timeout")
         spam_instance.get_node("CopyPasta").text = COPY_PASTAS[randi() % COPY_PASTAS.size()]
         spam_instance.get_node("AnimatedSprite").visible = false
         spam_instance.get_node("CopyPasta").visible = true

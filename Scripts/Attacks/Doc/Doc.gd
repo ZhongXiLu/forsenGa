@@ -10,26 +10,23 @@ var next_attacks = []
 
 
 func _ready():
-    randomize()     # randomize seed here
+    randomize()     # TODO: move this line somewhere else?
     $Introduction.play()
-    yield(get_tree().create_timer(6, false), "timeout")
+    yield(get_tree().create_timer(5, false), "timeout")
     can_attack = true
 
 
 func _process(_delta):
     if can_attack and !dead:
         can_attack = false
-
+        yield(get_tree().create_timer(1, false), "timeout")     # small buffer in between attacks
+        
         if next_attacks.empty():
             # Create new permutation of attacks
             next_attacks = range(attacks.size())
             next_attacks.shuffle()
             
         $Attacks.add_child(attacks[next_attacks.pop_front()].instance())
-        
-        # TODO: wait for attack to finish
-        yield(get_tree().create_timer(attack_rate, false), "timeout")
-        can_attack = true
 
 
 func _physics_process(_delta):
@@ -42,3 +39,7 @@ func _on_Stats_no_health():
     $Attacks.queue_free()
     dead = true
     $AnimatedSprite.play("dead")
+
+
+func attack_finished():
+    can_attack = true

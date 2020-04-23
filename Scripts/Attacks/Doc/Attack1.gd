@@ -1,4 +1,4 @@
-extends Node
+extends "res://Scripts/Attacks/Attack.gd"
 
 export var initial_bullet_speed = 200
 export var bullet_speed = 3000
@@ -19,17 +19,16 @@ func _ready():
     target_position_offsets.shuffle()
     
     for target_position_offset in target_position_offsets:
-        var current_bullet_instances = []
+        var bullet_instances = []
         for offset in target_position_offset:
             var bullet_instance = bullet.instance()
             bullet_instance.position.x = get_node("../../").global_position.x
             bullet_instance.position.y = get_node("../../").global_position.y + sprite_size_offset
-            add_child(bullet_instance)
+            get_parent().add_child(bullet_instance)
             bullet_instance.set_linear_velocity(
                 (Vector2(get_node("../../../Player").position.x + offset, get_node("../../../Player").position.y)
                 - bullet_instance.position).normalized() * initial_bullet_speed
             )
-            current_bullet_instances.append(bullet_instance)
             bullet_instances.append(bullet_instance)
             
         # Delay the attack a little bit, so the player has time to react
@@ -37,13 +36,11 @@ func _ready():
     
         # Speed the bullet up after delay
         var speed_factor = bullet_speed / initial_bullet_speed
-        for bullet_instance in current_bullet_instances:
+        for bullet_instance in bullet_instances:
             if weakref(bullet_instance).get_ref():     # possible that bullet gets freed on creation
                 bullet_instance.linear_velocity.x *= speed_factor
                 bullet_instance.linear_velocity.y *= speed_factor
                 
         yield(get_tree().create_timer(0.25, false), "timeout")
-
-func _process(_delta):
-    if bullet_instances.empty():
-        queue_free()        # attack is over
+    
+    queue_free()

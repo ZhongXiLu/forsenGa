@@ -1,11 +1,9 @@
-extends Node
+extends "res://Scripts/Attacks/Attack.gd"
 
 export var drop_speed = 1500
 export var width_arena = 1100
 
 var spam = preload("res://Scenes/ObjectScenes/Spam.tscn")
-var spam_instances = []
-var attack_finished = false
 
 # Probably not a good idea to hardcode copy pasta's but eShrug
 const COPY_PASTAS = [
@@ -27,18 +25,13 @@ func _ready():
         var target_position = Vector2(get_node("../../").global_position.x - randi() % width_arena + 1, get_node("../../").global_position.y - 500)
         spam_instance.position = target_position
         spam_instance.get_node("AnimatedSprite").play()
-        add_child(spam_instance)
+        get_parent().add_child(spam_instance)
         yield(get_tree().create_timer(0.8, false), "timeout")
         spam_instance.get_node("CopyPasta").text = COPY_PASTAS[randi() % COPY_PASTAS.size()]
         spam_instance.get_node("AnimatedSprite").visible = false
         spam_instance.get_node("CopyPasta").visible = true
         spam_instance.set_linear_velocity(Vector2(0, drop_speed))
-        spam_instances.append(spam_instance)
         yield(get_tree().create_timer(1, false), "timeout")
 
-    attack_finished = true
     get_node("../../AnimatedSprite").play("idle")
-
-func _process(_delta):
-    if spam_instances.empty() and attack_finished:
-        queue_free()        # attack is over
+    queue_free()

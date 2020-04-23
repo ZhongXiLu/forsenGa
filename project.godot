@@ -20,6 +20,10 @@ run/main_scene="res://Scenes/LevelScenes/Level1.tscn"
 config/icon="res://icon.png"
 config/windows_native_icon="res://icon.ico"
 
+[audio]
+
+default_bus_layout=""
+
 [display]
 
 window/size/width=1920

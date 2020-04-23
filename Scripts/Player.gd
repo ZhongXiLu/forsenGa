@@ -20,7 +20,7 @@ var can_dash = true     # possible to dash now (~dash rate)
 var dashing = false     # player is currently dashing
 
 
-func _process(delta):
+func _process(_delta):
     
     if Input.is_mouse_button_pressed(BUTTON_LEFT) and can_fire:
         var bullet_instance = bullet.instance()
@@ -34,7 +34,7 @@ func _process(delta):
         bullet_instance.set_linear_velocity((get_global_mouse_position() - global_position).normalized() * bullet_speed)
         
         can_fire = false
-        yield(get_tree().create_timer(fire_rate), "timeout")
+        yield(get_tree().create_timer(fire_rate, false), "timeout")
         can_fire = true
         
     if Input.is_mouse_button_pressed(BUTTON_LEFT):
@@ -71,9 +71,9 @@ func _physics_process(_delta):
             dashing = true
             motion.x = sign(motion.x) * dash_speed
             motion.y = 0
-            yield(get_tree().create_timer(0.2), "timeout")
+            yield(get_tree().create_timer(0.2, false), "timeout")
             dashing = false
-            yield(get_tree().create_timer(dash_rate), "timeout")
+            yield(get_tree().create_timer(dash_rate, false), "timeout")
             can_dash = true
         
     motion = move_and_slide(motion, UP)

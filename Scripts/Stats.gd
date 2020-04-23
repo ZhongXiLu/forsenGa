@@ -21,5 +21,5 @@ func set_health(value):
         
         if took_damage:
             get_parent().modulate = Color(2, 2, 2, 2)
-            yield(get_tree().create_timer(0.1), "timeout")
+            yield(get_tree().create_timer(0.1, false), "timeout")
             get_parent().modulate = Color(1, 1, 1, 1)

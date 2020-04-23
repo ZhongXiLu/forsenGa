@@ -8,11 +8,11 @@ var bullet_instances = []
 func _ready():
     
     $AudioStreamPlayer.play()
-    get_parent().get_node("AnimatedSprite").play("attack3")
+    get_node("../../AnimatedSprite").play("attack3")
     
     # Where to instantiate the bullets => outside the sprite
-    var sprite_size_offset = get_parent().get_node("AnimatedSprite").frames.get_frame("idle", 0).get_width() * 1.2
-    var old_position = get_parent().global_position
+    var sprite_size_offset = get_node("../../AnimatedSprite").frames.get_frame("idle", 0).get_width() * 1.2
+    var old_position = get_node("../../").global_position
     
     # TODO: make the Doc move across the screen?
     
@@ -25,9 +25,9 @@ func _ready():
             (bullet_instance.position - old_position).normalized() * bullet_speed
         )
         bullet_instances.append(bullet_instance)
-        yield(get_tree().create_timer(0.1), "timeout")
+        yield(get_tree().create_timer(0.1, false), "timeout")
 
-    get_parent().get_node("AnimatedSprite").play("idle")
+    get_node("../../AnimatedSprite").play("idle")
 
 func _process(_delta):
     if bullet_instances.empty():

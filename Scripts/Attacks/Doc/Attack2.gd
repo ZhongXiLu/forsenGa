@@ -20,24 +20,24 @@ const COPY_PASTAS = [
 func _ready():
     
     $AudioStreamPlayer.play()
-    get_parent().get_node("AnimatedSprite").play("attack2")
+    get_node("../../AnimatedSprite").play("attack2")
     
     for _i in range(2):
         var spam_instance = spam.instance()
-        var target_position = Vector2(get_parent().global_position.x - randi() % width_arena + 1, get_parent().global_position.y - 500)
+        var target_position = Vector2(get_node("../../").global_position.x - randi() % width_arena + 1, get_node("../../").global_position.y - 500)
         spam_instance.position = target_position
         spam_instance.get_node("AnimatedSprite").play()
         add_child(spam_instance)
-        yield(get_tree().create_timer(1), "timeout")
+        yield(get_tree().create_timer(1, false), "timeout")
         spam_instance.get_node("CopyPasta").text = COPY_PASTAS[randi() % COPY_PASTAS.size()]
         spam_instance.get_node("AnimatedSprite").visible = false
         spam_instance.get_node("CopyPasta").visible = true
         spam_instance.set_linear_velocity(Vector2(0, drop_speed))
         spam_instances.append(spam_instance)
-        yield(get_tree().create_timer(1), "timeout")
+        yield(get_tree().create_timer(1, false), "timeout")
 
     attack_finished = true
-    get_parent().get_node("AnimatedSprite").play("idle")
+    get_node("../../AnimatedSprite").play("idle")
 
 func _process(_delta):
     if spam_instances.empty() and attack_finished:

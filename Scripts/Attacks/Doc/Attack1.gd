@@ -14,7 +14,7 @@ func _ready():
     var sprite_size_offset = get_node("../../AnimatedSprite").frames.get_frame("idle", 0).get_width() * 1.2
     
     var target_position_offsets = [
-        [-400, 0, 400], [-400, -200, 200, 400], range(-500, 500, 100), range(-200, -2000, -100) + range(200, 2000, 100)
+        [-400, 0, 400], [-400, -200, 200, 400], range(-450, 450, 100), range(-200, -2000, -100) + range(200, 2000, 100)
        ]
     target_position_offsets.shuffle()
     

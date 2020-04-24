@@ -13,9 +13,7 @@ func _ready():
     var sprite_size_offset = get_node("../../AnimatedSprite").frames.get_frame("idle", 0).get_width() * 1.2
     var old_position = get_node("../../").global_position
     
-    # TODO: speed up attack
-    
-    for _i in range(30):
+    for _i in range(35):
         var bullet_instance = bullet.instance()
         bullet_instance.position.x = old_position.x + (rand_range(-1.5, 1.5) * sprite_size_offset)
         bullet_instance.position.y = old_position.y + sprite_size_offset

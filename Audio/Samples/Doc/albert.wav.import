@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/albert.wav-53e90db75f6c35dbc7a0116fa7eec1d7.sample"
+
+[deps]
+
+source_file="res://Audio/Samples/Doc/albert.wav"
+dest_files=[ "res://.import/albert.wav-53e90db75f6c35dbc7a0116fa7eec1d7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

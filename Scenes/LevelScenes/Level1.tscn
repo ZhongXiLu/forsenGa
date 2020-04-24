@@ -1,4 +1,4 @@
-[gd_scene load_steps=306 format=2]
+[gd_scene load_steps=307 format=2]
 
 [ext_resource path="res://Scenes/ObjectScenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/UIScenes/GUI.tscn" type="PackedScene" id=2]
@@ -302,6 +302,7 @@
 [ext_resource path="res://Sprites/hackerCD/frame_100_delay-0.03s.png" type="Texture" id=300]
 [ext_resource path="res://Sprites/hackerCD/frame_099_delay-0.03s.png" type="Texture" id=301]
 [ext_resource path="res://UI/MyTheme.tres" type="Theme" id=302]
+[ext_resource path="res://Scenes/AttackScenes/Doc/SpecialAttack.tscn" type="PackedScene" id=303]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 2453.54, 17.8206 )
@@ -313,15 +314,15 @@ animations = [ {
 "name": "idle",
 "speed": 14.0
 }, {
-"frames": [ ExtResource( 177 ), ExtResource( 182 ), ExtResource( 179 ), ExtResource( 180 ), ExtResource( 16 ), ExtResource( 18 ), ExtResource( 171 ), ExtResource( 17 ), ExtResource( 175 ), ExtResource( 169 ), ExtResource( 183 ), ExtResource( 170 ), ExtResource( 172 ), ExtResource( 181 ), ExtResource( 176 ), ExtResource( 173 ), ExtResource( 178 ), ExtResource( 174 ), ExtResource( 192 ), ExtResource( 198 ), ExtResource( 199 ), ExtResource( 196 ), ExtResource( 197 ), ExtResource( 195 ), ExtResource( 187 ), ExtResource( 194 ), ExtResource( 189 ), ExtResource( 184 ), ExtResource( 185 ), ExtResource( 193 ), ExtResource( 186 ), ExtResource( 188 ), ExtResource( 190 ), ExtResource( 191 ) ],
-"loop": true,
-"name": "attack3",
-"speed": 48.0
-}, {
 "frames": [ ExtResource( 200 ), ExtResource( 201 ), ExtResource( 202 ), ExtResource( 231 ), ExtResource( 208 ), ExtResource( 209 ), ExtResource( 232 ), ExtResource( 222 ), ExtResource( 224 ), ExtResource( 206 ), ExtResource( 230 ), ExtResource( 223 ), ExtResource( 214 ), ExtResource( 221 ), ExtResource( 210 ), ExtResource( 233 ), ExtResource( 220 ), ExtResource( 234 ), ExtResource( 225 ), ExtResource( 229 ), ExtResource( 203 ), ExtResource( 205 ), ExtResource( 226 ), ExtResource( 204 ), ExtResource( 217 ), ExtResource( 216 ), ExtResource( 207 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 227 ), ExtResource( 228 ), ExtResource( 213 ), ExtResource( 215 ), ExtResource( 218 ), ExtResource( 219 ), ExtResource( 264 ), ExtResource( 254 ), ExtResource( 253 ), ExtResource( 255 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 247 ), ExtResource( 250 ), ExtResource( 256 ), ExtResource( 239 ), ExtResource( 265 ), ExtResource( 257 ), ExtResource( 238 ), ExtResource( 244 ), ExtResource( 246 ), ExtResource( 258 ), ExtResource( 251 ), ExtResource( 262 ), ExtResource( 266 ), ExtResource( 240 ), ExtResource( 235 ), ExtResource( 259 ), ExtResource( 236 ), ExtResource( 237 ), ExtResource( 252 ), ExtResource( 260 ), ExtResource( 241 ), ExtResource( 248 ), ExtResource( 245 ), ExtResource( 249 ), ExtResource( 261 ), ExtResource( 263 ), ExtResource( 288 ), ExtResource( 291 ), ExtResource( 274 ), ExtResource( 284 ), ExtResource( 277 ), ExtResource( 280 ), ExtResource( 269 ), ExtResource( 285 ), ExtResource( 283 ), ExtResource( 286 ), ExtResource( 271 ), ExtResource( 270 ), ExtResource( 294 ), ExtResource( 292 ), ExtResource( 289 ), ExtResource( 295 ), ExtResource( 272 ), ExtResource( 273 ), ExtResource( 275 ), ExtResource( 279 ), ExtResource( 276 ), ExtResource( 293 ), ExtResource( 296 ), ExtResource( 290 ), ExtResource( 278 ), ExtResource( 268 ), ExtResource( 281 ), ExtResource( 282 ), ExtResource( 297 ), ExtResource( 298 ), ExtResource( 287 ), ExtResource( 267 ), ExtResource( 301 ), ExtResource( 300 ), ExtResource( 299 ) ],
 "loop": true,
 "name": "attack2",
 "speed": 24.0
+}, {
+"frames": [ ExtResource( 177 ), ExtResource( 182 ), ExtResource( 179 ), ExtResource( 180 ), ExtResource( 16 ), ExtResource( 18 ), ExtResource( 171 ), ExtResource( 17 ), ExtResource( 175 ), ExtResource( 169 ), ExtResource( 183 ), ExtResource( 170 ), ExtResource( 172 ), ExtResource( 181 ), ExtResource( 176 ), ExtResource( 173 ), ExtResource( 178 ), ExtResource( 174 ), ExtResource( 192 ), ExtResource( 198 ), ExtResource( 199 ), ExtResource( 196 ), ExtResource( 197 ), ExtResource( 195 ), ExtResource( 187 ), ExtResource( 194 ), ExtResource( 189 ), ExtResource( 184 ), ExtResource( 185 ), ExtResource( 193 ), ExtResource( 186 ), ExtResource( 188 ), ExtResource( 190 ), ExtResource( 191 ) ],
+"loop": true,
+"name": "attack3",
+"speed": 48.0
 }, {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
@@ -397,7 +398,7 @@ text = "Quit"
 [node name="GUI" parent="." instance=ExtResource( 2 )]
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 238, 848 )
+position = Vector2( 238, 844.746 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="Player"]
 
@@ -442,12 +443,13 @@ __meta__ = {
 "_edit_group_": true
 }
 attacks = [ ExtResource( 12 ), ExtResource( 14 ), ExtResource( 15 ) ]
+specialAttack = ExtResource( 303 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Doc"]
 scale = Vector2( 2.5, 2.5 )
 frames = SubResource( 2 )
 animation = "idle"
-frame = 144
+frame = 60
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Doc"]
@@ -456,6 +458,7 @@ shape = SubResource( 3 )
 
 [node name="Stats" parent="Doc" instance=ExtResource( 5 )]
 max_health = 200
+invulnerable_time = 0.0
 
 [node name="Introduction" type="AudioStreamPlayer" parent="Doc"]
 stream = ExtResource( 13 )
@@ -479,8 +482,8 @@ stream = ExtResource( 9 )
 [connection signal="no_health" from="Player/Stats" to="BGMPlayer" method="_on_Player_Stats_no_health"]
 [connection signal="health_changed" from="Doc/Stats" to="GUI" method="_on_Boss_Stats_health_changed"]
 [connection signal="health_init" from="Doc/Stats" to="GUI" method="_on_Stats_health_init"]
-[connection signal="no_health" from="Doc/Stats" to="Doc" method="_on_Stats_no_health"]
 [connection signal="no_health" from="Doc/Stats" to="BGMPlayer" method="_on_Boss_Stats_no_health"]
+[connection signal="no_health" from="Doc/Stats" to="Doc" method="_on_Stats_no_health"]
 
 [editable path="GUI"]
 

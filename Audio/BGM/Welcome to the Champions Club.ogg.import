@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Welcome to the Champions Club.ogg-edcf4cf73d418932dd0f61f2601a732d.oggstr"
+
+[deps]
+
+source_file="res://Audio/BGM/Welcome to the Champions Club.ogg"
+dest_files=[ "res://.import/Welcome to the Champions Club.ogg-edcf4cf73d418932dd0f61f2601a732d.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

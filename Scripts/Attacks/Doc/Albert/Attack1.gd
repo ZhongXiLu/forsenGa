@@ -7,6 +7,8 @@ var bullet = preload("res://Scenes/ObjectScenes/Card.tscn")
 
 func _ready():
     
+    $AudioStreamPlayer.play()
+    
     var parent = get_node("../../")
     
     # Where to instantiate the bullets => outside the sprite

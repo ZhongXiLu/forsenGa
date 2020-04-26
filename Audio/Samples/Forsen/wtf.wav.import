@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/wtf.wav-6931a124d72e5b974704a681b2fecb29.sample"
+
+[deps]
+
+source_file="res://Audio/Samples/Forsen/wtf.wav"
+dest_files=[ "res://.import/wtf.wav-6931a124d72e5b974704a681b2fecb29.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

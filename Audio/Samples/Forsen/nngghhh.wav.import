@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/nngghhh.wav-3535698357911e6fa5b2a693768fda2e.sample"
+
+[deps]
+
+source_file="res://Audio/Samples/Forsen/nngghhh.wav"
+dest_files=[ "res://.import/nngghhh.wav-3535698357911e6fa5b2a693768fda2e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0

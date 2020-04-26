@@ -83,3 +83,4 @@ func _on_Stats_no_health():
     visible = false
     set_process(false)
     set_physics_process(false)
+

@@ -8,6 +8,7 @@ var invulnerable = false
 
 signal health_init(health)
 signal health_changed(health)
+signal took_damage
 signal no_health
 
 func _ready():
@@ -29,6 +30,7 @@ func set_health(value):
             has_invulnerable_time = false
             
         if took_damage:
+            emit_signal("took_damage")
             get_parent().modulate = Color(2, 2, 2, 2)
             yield(get_tree().create_timer(0.1, false), "timeout")
             get_parent().modulate = Color(1, 1, 1, 1)

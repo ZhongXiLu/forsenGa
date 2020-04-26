@@ -1,6 +1,5 @@
 extends AudioStreamPlayer
 
-
 func _on_Player_Stats_no_health():
     stop()
     $PlayerDeath.play()

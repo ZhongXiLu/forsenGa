@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Sprites/forsenGa/forsenGa.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/forsenGa/0.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Sprites/forsenGa/11.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/forsenGa/1.png" type="Texture" id=5]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/HitSounds.gd" type="Script" id=7]
 [ext_resource path="res://Scenes/ObjectScenes/Stats.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Sprites/forsenGa/13.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/forsenGa/7.png" type="Texture" id=10]
@@ -17,6 +18,17 @@
 [ext_resource path="res://Sprites/forsenGa/5.png" type="Texture" id=16]
 [ext_resource path="res://Sprites/forsenGa/2.png" type="Texture" id=17]
 [ext_resource path="res://Sprites/forsenGa/9.png" type="Texture" id=18]
+[ext_resource path="res://Audio/Samples/Forsen/shitinmyasshole.wav" type="AudioStream" id=19]
+[ext_resource path="res://Audio/Samples/Forsen/ahnoo.wav" type="AudioStream" id=20]
+[ext_resource path="res://Audio/Samples/Forsen/ahhaha.wav" type="AudioStream" id=21]
+[ext_resource path="res://Audio/Samples/Forsen/fitta.wav" type="AudioStream" id=22]
+[ext_resource path="res://Audio/Samples/Forsen/huhuhu.wav" type="AudioStream" id=23]
+[ext_resource path="res://Audio/Samples/Forsen/fuck.wav" type="AudioStream" id=24]
+[ext_resource path="res://Audio/Samples/Forsen/nngghhh.wav" type="AudioStream" id=25]
+[ext_resource path="res://Audio/Samples/Forsen/unlucky2.wav" type="AudioStream" id=26]
+[ext_resource path="res://Audio/Samples/Forsen/wtf.wav" type="AudioStream" id=27]
+[ext_resource path="res://Audio/Samples/Forsen/unlucky.wav" type="AudioStream" id=28]
+[ext_resource path="res://Audio/Samples/Forsen/vafan.wav" type="AudioStream" id=29]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -63,4 +75,11 @@ current = true
 zoom = Vector2( 1.6, 1.6 )
 limit_left = -500
 limit_right = 2900
+
+[node name="HitSounds" type="Node" parent="."]
+script = ExtResource( 7 )
+sounds = [ ExtResource( 21 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 25 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 27 ) ]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="HitSounds"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
+[connection signal="took_damage" from="Stats" to="HitSounds" method="_on_Stats_took_damage"]

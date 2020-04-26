@@ -28,3 +28,10 @@ func _on_Boss_Stats_health_changed(health):
     var health_node = get_node("CenterContainer/EnemyHealth")
     health_node.value = health
     get_node("CenterContainer/EnemyHealth/CenterContainer/EnemyHealthValue").text = str(health)
+
+
+func _on_Stats_no_health():
+    $Retry.visible = true
+
+func _on_Retry_pressed():
+    get_tree().reload_current_scene()

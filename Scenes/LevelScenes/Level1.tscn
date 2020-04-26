@@ -449,7 +449,7 @@ specialAttack = ExtResource( 303 )
 scale = Vector2( 2.5, 2.5 )
 frames = SubResource( 2 )
 animation = "idle"
-frame = 134
+frame = 55
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Doc"]
@@ -480,6 +480,7 @@ stream = ExtResource( 9 )
 [connection signal="health_changed" from="Player/Stats" to="GUI" method="_on_Player_Stats_health_changed"]
 [connection signal="health_init" from="Player/Stats" to="GUI" method="_on_Player_Stats_health_init"]
 [connection signal="no_health" from="Player/Stats" to="BGMPlayer" method="_on_Player_Stats_no_health"]
+[connection signal="no_health" from="Player/Stats" to="GUI" method="_on_Stats_no_health"]
 [connection signal="health_changed" from="Doc/Stats" to="GUI" method="_on_Boss_Stats_health_changed"]
 [connection signal="health_init" from="Doc/Stats" to="GUI" method="_on_Stats_health_init"]
 [connection signal="no_health" from="Doc/Stats" to="BGMPlayer" method="_on_Boss_Stats_no_health"]

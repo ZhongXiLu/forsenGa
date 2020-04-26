@@ -80,5 +80,6 @@ func _physics_process(_delta):
 
 
 func _on_Stats_no_health():
-    # TODO: player died
-    print("Player died!")
+    visible = false
+    set_process(false)
+    set_physics_process(false)

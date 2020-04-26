@@ -121,5 +121,5 @@ pause={
 quality/driver/driver_name="GLES2"
 quality/2d/gles2_use_nvidia_rect_flicker_workaround=true
 quality/2d/use_pixel_snap=true
-environment/default_clear_color=Color( 0.180392, 0.203922, 0.266667, 1 )
+environment/default_clear_color=Color( 0.129412, 0.14902, 0.247059, 1 )
 environment/default_environment="res://default_env.tres"

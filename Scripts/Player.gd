@@ -11,8 +11,6 @@ export var dash_rate = 0.6
 export var bullet_speed = 5000
 export var fire_rate = 0.5
 
-const UP = Vector2(0, -1)   # which direction is "up"
-
 var motion = Vector2()
 var bullet = preload("res://Scenes/ObjectScenes/pepeL.tscn")
 var can_fire = true
@@ -76,7 +74,7 @@ func _physics_process(_delta):
             yield(get_tree().create_timer(dash_rate, false), "timeout")
             can_dash = true
         
-    motion = move_and_slide(motion, UP)
+    motion = move_and_slide(motion, Vector2(0, -1))
 
 
 func _on_Stats_no_health():

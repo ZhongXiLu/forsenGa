@@ -13,6 +13,7 @@ var used_special_attack = false
 
 func _ready():
     randomize()     # TODO: move this line somewhere else?
+    $AnimatedSprite.play()
     $Introduction.play()
     yield(get_tree().create_timer(5, false), "timeout")
     can_attack = true

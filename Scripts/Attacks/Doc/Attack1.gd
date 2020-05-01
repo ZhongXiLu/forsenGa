@@ -3,7 +3,7 @@ extends "res://Scripts/Attacks/Attack.gd"
 export var initial_bullet_speed = 200
 export var bullet_speed = 3000
 
-var bullet = preload("res://Scenes/ObjectScenes/CD.tscn")
+var bullet = preload("res://Scenes/ObjectScenes/Doc/CD.tscn")
 var bullet_instances = []
 
 func _ready():

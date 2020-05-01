@@ -3,7 +3,7 @@ extends "res://Scripts/Attacks/Attack.gd"
 export var drop_speed = 1500
 export var width_arena = 1100
 
-var spam = preload("res://Scenes/ObjectScenes/Spam.tscn")
+var spam = preload("res://Scenes/ObjectScenes/Doc/Spam.tscn")
 
 # Probably not a good idea to hardcode copy pasta's but eShrug
 const COPY_PASTAS = [
@@ -18,7 +18,6 @@ const COPY_PASTAS = [
 func _ready():
     
     $AudioStreamPlayer.play()
-    get_node("../../AnimatedSprite").play("attack2")
     
     for _i in range(2):
         var spam_instance = spam.instance()
@@ -33,5 +32,4 @@ func _ready():
         spam_instance.set_linear_velocity(Vector2(0, drop_speed))
         yield(get_tree().create_timer(1, false), "timeout")
 
-    get_node("../../AnimatedSprite").play("idle")
     queue_free()

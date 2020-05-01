@@ -19,7 +19,7 @@ func _process(_delta):
     if can_attack:
         can_attack = false
         
-        yield(get_tree().create_timer(2, false), "timeout")     # buffer in between attacks
+        yield(get_tree().create_timer(4, false), "timeout")     # buffer in between attacks
         
         if next_attacks.empty():
             # Create new permutation of attacks

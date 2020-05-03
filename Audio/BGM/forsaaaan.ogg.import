@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/forsaaaan.ogg-7706d2842400322d2eb14fa90410ccfb.oggstr"
+
+[deps]
+
+source_file="res://Audio/BGM/forsaaaan.ogg"
+dest_files=[ "res://.import/forsaaaan.ogg-7706d2842400322d2eb14fa90410ccfb.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

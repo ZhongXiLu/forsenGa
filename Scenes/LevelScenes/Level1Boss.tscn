@@ -1,0 +1,532 @@
+[gd_scene load_steps=358 format=2]
+
+[ext_resource path="res://Scripts/Attacks/Doc/Doc.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Water.gd" type="Script" id=2]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_014_delay-0.07s.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Doc/residentCD.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Bgs/arena.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_008_delay-0.07s.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_009_delay-0.07s.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_004_delay-0.07s.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_010_delay-0.07s.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_07_delay-0.02s.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_05_delay-0.02s.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_04_delay-0.02s.png" type="Texture" id=12]
+[ext_resource path="res://Audio/Samples/Doc/laugh.wav" type="AudioStream" id=13]
+[ext_resource path="res://Audio/Samples/Doc/screaming.wav" type="AudioStream" id=14]
+[ext_resource path="res://Audio/Samples/Doc/thenameis.wav" type="AudioStream" id=15]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_124_delay-0.07s.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_007_delay-0.07s.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_142_delay-0.07s.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_140_delay-0.07s.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_013_delay-0.07s.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_145_delay-0.07s.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_135_delay-0.07s.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_003_delay-0.07s.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_133_delay-0.07s.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_146_delay-0.07s.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_139_delay-0.07s.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_147_delay-0.07s.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_011_delay-0.07s.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_127_delay-0.07s.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_006_delay-0.07s.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_131_delay-0.07s.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_137_delay-0.07s.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_001_delay-0.07s.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_129_delay-0.07s.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_000_delay-0.07s.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_005_delay-0.07s.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_002_delay-0.07s.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_130_delay-0.07s.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_144_delay-0.07s.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_134_delay-0.07s.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_132_delay-0.07s.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_143_delay-0.07s.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_148_delay-0.07s.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_012_delay-0.07s.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_138_delay-0.07s.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_136_delay-0.07s.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_125_delay-0.07s.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_017_delay-0.07s.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_141_delay-0.07s.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_128_delay-0.07s.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_034_delay-0.07s.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_030_delay-0.07s.png" type="Texture" id=52]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_041_delay-0.07s.png" type="Texture" id=53]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_043_delay-0.07s.png" type="Texture" id=54]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_031_delay-0.07s.png" type="Texture" id=55]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_126_delay-0.07s.png" type="Texture" id=56]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_036_delay-0.07s.png" type="Texture" id=57]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_020_delay-0.07s.png" type="Texture" id=58]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_023_delay-0.07s.png" type="Texture" id=59]
+[ext_resource path="res://Scenes/UIScenes/GUI.tscn" type="PackedScene" id=60]
+[ext_resource path="res://Scenes/ObjectScenes/Player.tscn" type="PackedScene" id=61]
+[ext_resource path="res://Scenes/UIScenes/Pause.tscn" type="PackedScene" id=62]
+[ext_resource path="res://Scenes/UIScenes/BGMPlayer.tscn" type="PackedScene" id=63]
+[ext_resource path="res://Scenes/AttackScenes/Doc/SpecialAttack.tscn" type="PackedScene" id=64]
+[ext_resource path="res://Scenes/AttackScenes/Doc/Attack2.tscn" type="PackedScene" id=65]
+[ext_resource path="res://Scenes/ObjectScenes/Stats.tscn" type="PackedScene" id=66]
+[ext_resource path="res://Scenes/AttackScenes/Doc/Attack1.tscn" type="PackedScene" id=67]
+[ext_resource path="res://Scenes/AttackScenes/Doc/Attack3.tscn" type="PackedScene" id=68]
+[ext_resource path="res://Scenes/AttackScenes/Doc/Attack4.tscn" type="PackedScene" id=69]
+[ext_resource path="res://Scenes/AttackScenes/Doc/Attack5.tscn" type="PackedScene" id=70]
+[ext_resource path="res://Sprites/Tilesets/Env1.tres" type="TileSet" id=71]
+[ext_resource path="res://Sprites/Tilesets/Water.tres" type="TileSet" id=72]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_045_delay-0.07s.png" type="Texture" id=73]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_063_delay-0.07s.png" type="Texture" id=74]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_029_delay-0.07s.png" type="Texture" id=75]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_042_delay-0.07s.png" type="Texture" id=76]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_054_delay-0.07s.png" type="Texture" id=77]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_047_delay-0.07s.png" type="Texture" id=78]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_040_delay-0.07s.png" type="Texture" id=79]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_028_delay-0.07s.png" type="Texture" id=80]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_051_delay-0.07s.png" type="Texture" id=81]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_053_delay-0.07s.png" type="Texture" id=82]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_039_delay-0.07s.png" type="Texture" id=83]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_015_delay-0.07s.png" type="Texture" id=84]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_046_delay-0.07s.png" type="Texture" id=85]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_027_delay-0.07s.png" type="Texture" id=86]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_035_delay-0.07s.png" type="Texture" id=87]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_032_delay-0.07s.png" type="Texture" id=88]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_021_delay-0.07s.png" type="Texture" id=89]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_016_delay-0.07s.png" type="Texture" id=90]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_044_delay-0.07s.png" type="Texture" id=91]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_022_delay-0.07s.png" type="Texture" id=92]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_019_delay-0.07s.png" type="Texture" id=93]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_064_delay-0.07s.png" type="Texture" id=94]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_070_delay-0.07s.png" type="Texture" id=95]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_072_delay-0.07s.png" type="Texture" id=96]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_073_delay-0.07s.png" type="Texture" id=97]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_038_delay-0.07s.png" type="Texture" id=98]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_033_delay-0.07s.png" type="Texture" id=99]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_018_delay-0.07s.png" type="Texture" id=100]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_026_delay-0.07s.png" type="Texture" id=101]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_025_delay-0.07s.png" type="Texture" id=102]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_024_delay-0.07s.png" type="Texture" id=103]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_037_delay-0.07s.png" type="Texture" id=104]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_069_delay-0.07s.png" type="Texture" id=105]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_093_delay-0.07s.png" type="Texture" id=106]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_088_delay-0.07s.png" type="Texture" id=107]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_106_delay-0.07s.png" type="Texture" id=108]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_107_delay-0.07s.png" type="Texture" id=109]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_052_delay-0.07s.png" type="Texture" id=110]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_094_delay-0.07s.png" type="Texture" id=111]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_086_delay-0.07s.png" type="Texture" id=112]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_056_delay-0.07s.png" type="Texture" id=113]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_062_delay-0.07s.png" type="Texture" id=114]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_049_delay-0.07s.png" type="Texture" id=115]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_059_delay-0.07s.png" type="Texture" id=116]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_068_delay-0.07s.png" type="Texture" id=117]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_055_delay-0.07s.png" type="Texture" id=118]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_067_delay-0.07s.png" type="Texture" id=119]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_071_delay-0.07s.png" type="Texture" id=120]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_077_delay-0.07s.png" type="Texture" id=121]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_075_delay-0.07s.png" type="Texture" id=122]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_078_delay-0.07s.png" type="Texture" id=123]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_050_delay-0.07s.png" type="Texture" id=124]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_096_delay-0.07s.png" type="Texture" id=125]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_104_delay-0.07s.png" type="Texture" id=126]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_060_delay-0.07s.png" type="Texture" id=127]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_066_delay-0.07s.png" type="Texture" id=128]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_065_delay-0.07s.png" type="Texture" id=129]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_057_delay-0.07s.png" type="Texture" id=130]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_061_delay-0.07s.png" type="Texture" id=131]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_058_delay-0.07s.png" type="Texture" id=132]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_105_delay-0.07s.png" type="Texture" id=133]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_048_delay-0.07s.png" type="Texture" id=134]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_074_delay-0.07s.png" type="Texture" id=135]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_076_delay-0.07s.png" type="Texture" id=136]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_121_delay-0.07s.png" type="Texture" id=137]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_098_delay-0.07s.png" type="Texture" id=138]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_080_delay-0.07s.png" type="Texture" id=139]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_118_delay-0.07s.png" type="Texture" id=140]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_108_delay-0.07s.png" type="Texture" id=141]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_090_delay-0.07s.png" type="Texture" id=142]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_110_delay-0.07s.png" type="Texture" id=143]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_103_delay-0.07s.png" type="Texture" id=144]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_082_delay-0.07s.png" type="Texture" id=145]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_102_delay-0.07s.png" type="Texture" id=146]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_100_delay-0.07s.png" type="Texture" id=147]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_087_delay-0.07s.png" type="Texture" id=148]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_095_delay-0.07s.png" type="Texture" id=149]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_079_delay-0.07s.png" type="Texture" id=150]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_092_delay-0.07s.png" type="Texture" id=151]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_085_delay-0.07s.png" type="Texture" id=152]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_109_delay-0.07s.png" type="Texture" id=153]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_101_delay-0.07s.png" type="Texture" id=154]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_081_delay-0.07s.png" type="Texture" id=155]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_112_delay-0.07s.png" type="Texture" id=156]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_119_delay-0.07s.png" type="Texture" id=157]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_115_delay-0.07s.png" type="Texture" id=158]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_099_delay-0.07s.png" type="Texture" id=159]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_097_delay-0.07s.png" type="Texture" id=160]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_083_delay-0.07s.png" type="Texture" id=161]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_116_delay-0.07s.png" type="Texture" id=162]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_114_delay-0.07s.png" type="Texture" id=163]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_084_delay-0.07s.png" type="Texture" id=164]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_111_delay-0.07s.png" type="Texture" id=165]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_123_delay-0.07s.png" type="Texture" id=166]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_089_delay-0.07s.png" type="Texture" id=167]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_091_delay-0.07s.png" type="Texture" id=168]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_01_delay-0.02s.png" type="Texture" id=169]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_16_delay-0.02s.png" type="Texture" id=170]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_03_delay-0.02s.png" type="Texture" id=171]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_120_delay-0.07s.png" type="Texture" id=172]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_113_delay-0.07s.png" type="Texture" id=173]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_13_delay-0.02s.png" type="Texture" id=174]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_27_delay-0.02s.png" type="Texture" id=175]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_31_delay-0.02s.png" type="Texture" id=176]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_30_delay-0.02s.png" type="Texture" id=177]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_10_delay-0.02s.png" type="Texture" id=178]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_117_delay-0.07s.png" type="Texture" id=179]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_08_delay-0.02s.png" type="Texture" id=180]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_28_delay-0.02s.png" type="Texture" id=181]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_24_delay-0.02s.png" type="Texture" id=182]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_26_delay-0.02s.png" type="Texture" id=183]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_32_delay-0.02s.png" type="Texture" id=184]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_33_delay-0.02s.png" type="Texture" id=185]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_18_delay-0.02s.png" type="Texture" id=186]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_29_delay-0.02s.png" type="Texture" id=187]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_12_delay-0.02s.png" type="Texture" id=188]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_06_delay-0.02s.png" type="Texture" id=189]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_14_delay-0.02s.png" type="Texture" id=190]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_09_delay-0.02s.png" type="Texture" id=191]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_11_delay-0.02s.png" type="Texture" id=192]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_00_delay-0.02s.png" type="Texture" id=193]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_15_delay-0.02s.png" type="Texture" id=194]
+[ext_resource path="res://Sprites/Doc/doctorDance/frame_122_delay-0.07s.png" type="Texture" id=195]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_17_delay-0.02s.png" type="Texture" id=196]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_02_delay-0.02s.png" type="Texture" id=197]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_19_delay-0.02s.png" type="Texture" id=198]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_22_delay-0.02s.png" type="Texture" id=199]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_000_delay-0.03s.png" type="Texture" id=200]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_020_delay-0.03s.png" type="Texture" id=201]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_021_delay-0.03s.png" type="Texture" id=202]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_009_delay-0.03s.png" type="Texture" id=203]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_23_delay-0.02s.png" type="Texture" id=204]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_20_delay-0.02s.png" type="Texture" id=205]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_002_delay-0.03s.png" type="Texture" id=206]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_023_delay-0.03s.png" type="Texture" id=207]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_001_delay-0.03s.png" type="Texture" id=208]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_25_delay-0.02s.png" type="Texture" id=209]
+[ext_resource path="res://Sprites/Doc/docSpin/frame_21_delay-0.02s.png" type="Texture" id=210]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_013_delay-0.03s.png" type="Texture" id=211]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_016_delay-0.03s.png" type="Texture" id=212]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_017_delay-0.03s.png" type="Texture" id=213]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_007_delay-0.03s.png" type="Texture" id=214]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_033_delay-0.03s.png" type="Texture" id=215]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_027_delay-0.03s.png" type="Texture" id=216]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_015_delay-0.03s.png" type="Texture" id=217]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_026_delay-0.03s.png" type="Texture" id=218]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_029_delay-0.03s.png" type="Texture" id=219]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_055_delay-0.03s.png" type="Texture" id=220]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_057_delay-0.03s.png" type="Texture" id=221]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_058_delay-0.03s.png" type="Texture" id=222]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_032_delay-0.03s.png" type="Texture" id=223]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_047_delay-0.03s.png" type="Texture" id=224]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_011_delay-0.03s.png" type="Texture" id=225]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_024_delay-0.03s.png" type="Texture" id=226]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_022_delay-0.03s.png" type="Texture" id=227]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_005_delay-0.03s.png" type="Texture" id=228]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_028_delay-0.03s.png" type="Texture" id=229]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_012_delay-0.03s.png" type="Texture" id=230]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_008_delay-0.03s.png" type="Texture" id=231]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_025_delay-0.03s.png" type="Texture" id=232]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_014_delay-0.03s.png" type="Texture" id=233]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_018_delay-0.03s.png" type="Texture" id=234]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_030_delay-0.03s.png" type="Texture" id=235]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_019_delay-0.03s.png" type="Texture" id=236]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_034_delay-0.03s.png" type="Texture" id=237]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_031_delay-0.03s.png" type="Texture" id=238]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_010_delay-0.03s.png" type="Texture" id=239]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_003_delay-0.03s.png" type="Texture" id=240]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_004_delay-0.03s.png" type="Texture" id=241]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_006_delay-0.03s.png" type="Texture" id=242]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_054_delay-0.03s.png" type="Texture" id=243]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_039_delay-0.03s.png" type="Texture" id=244]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_037_delay-0.03s.png" type="Texture" id=245]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_065_delay-0.03s.png" type="Texture" id=246]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_059_delay-0.03s.png" type="Texture" id=247]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_066_delay-0.03s.png" type="Texture" id=248]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_049_delay-0.03s.png" type="Texture" id=249]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_046_delay-0.03s.png" type="Texture" id=250]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_050_delay-0.03s.png" type="Texture" id=251]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_060_delay-0.03s.png" type="Texture" id=252]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_063_delay-0.03s.png" type="Texture" id=253]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_056_delay-0.03s.png" type="Texture" id=254]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_062_delay-0.03s.png" type="Texture" id=255]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_048_delay-0.03s.png" type="Texture" id=256]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_035_delay-0.03s.png" type="Texture" id=257]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_045_delay-0.03s.png" type="Texture" id=258]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_051_delay-0.03s.png" type="Texture" id=259]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_061_delay-0.03s.png" type="Texture" id=260]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_043_delay-0.03s.png" type="Texture" id=261]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_052_delay-0.03s.png" type="Texture" id=262]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_053_delay-0.03s.png" type="Texture" id=263]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_092_delay-0.03s.png" type="Texture" id=264]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_040_delay-0.03s.png" type="Texture" id=265]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_044_delay-0.03s.png" type="Texture" id=266]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_038_delay-0.03s.png" type="Texture" id=267]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_073_delay-0.03s.png" type="Texture" id=268]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_078_delay-0.03s.png" type="Texture" id=269]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_041_delay-0.03s.png" type="Texture" id=270]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_064_delay-0.03s.png" type="Texture" id=271]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_036_delay-0.03s.png" type="Texture" id=272]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_098_delay-0.03s.png" type="Texture" id=273]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_042_delay-0.03s.png" type="Texture" id=274]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_080_delay-0.03s.png" type="Texture" id=275]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_072_delay-0.03s.png" type="Texture" id=276]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_076_delay-0.03s.png" type="Texture" id=277]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_067_delay-0.03s.png" type="Texture" id=278]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_090_delay-0.03s.png" type="Texture" id=279]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_079_delay-0.03s.png" type="Texture" id=280]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_088_delay-0.03s.png" type="Texture" id=281]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_069_delay-0.03s.png" type="Texture" id=282]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_081_delay-0.03s.png" type="Texture" id=283]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_101_delay-0.03s.png" type="Texture" id=284]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_100_delay-0.03s.png" type="Texture" id=285]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_085_delay-0.03s.png" type="Texture" id=286]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_071_delay-0.03s.png" type="Texture" id=287]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_089_delay-0.03s.png" type="Texture" id=288]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_099_delay-0.03s.png" type="Texture" id=289]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_070_delay-0.03s.png" type="Texture" id=290]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_084_delay-0.03s.png" type="Texture" id=291]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_068_delay-0.03s.png" type="Texture" id=292]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_097_delay-0.03s.png" type="Texture" id=293]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_074_delay-0.03s.png" type="Texture" id=294]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_087_delay-0.03s.png" type="Texture" id=295]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_095_delay-0.03s.png" type="Texture" id=296]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_086_delay-0.03s.png" type="Texture" id=297]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_075_delay-0.03s.png" type="Texture" id=298]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_083_delay-0.03s.png" type="Texture" id=299]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_093_delay-0.03s.png" type="Texture" id=300]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_096_delay-0.03s.png" type="Texture" id=301]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_077_delay-0.03s.png" type="Texture" id=302]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_091_delay-0.03s.png" type="Texture" id=303]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_094_delay-0.03s.png" type="Texture" id=304]
+[ext_resource path="res://Sprites/Doc/hackerCD/frame_082_delay-0.03s.png" type="Texture" id=305]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_23_delay-0.07s.png" type="Texture" id=306]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_03_delay-0.07s.png" type="Texture" id=307]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_00_delay-0.07s.png" type="Texture" id=308]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_13_delay-0.06s.png" type="Texture" id=309]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_05_delay-0.07s.png" type="Texture" id=310]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_14_delay-0.07s.png" type="Texture" id=311]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_15_delay-0.07s.png" type="Texture" id=312]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_10_delay-0.06s.png" type="Texture" id=313]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_11_delay-0.07s.png" type="Texture" id=314]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_06_delay-0.07s.png" type="Texture" id=315]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_04_delay-0.06s.png" type="Texture" id=316]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_16_delay-0.06s.png" type="Texture" id=317]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_07_delay-0.06s.png" type="Texture" id=318]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_08_delay-0.07s.png" type="Texture" id=319]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_12_delay-0.07s.png" type="Texture" id=320]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_26_delay-0.07s.png" type="Texture" id=321]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_17_delay-0.07s.png" type="Texture" id=322]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_29_delay-0.07s.png" type="Texture" id=323]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_22_delay-0.06s.png" type="Texture" id=324]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_21_delay-0.07s.png" type="Texture" id=325]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_01_delay-0.06s.png" type="Texture" id=326]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_02_delay-0.07s.png" type="Texture" id=327]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_09_delay-0.07s.png" type="Texture" id=328]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_18_delay-0.07s.png" type="Texture" id=329]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_19_delay-0.06s.png" type="Texture" id=330]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_20_delay-0.07s.png" type="Texture" id=331]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_39_delay-0.07s.png" type="Texture" id=332]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_42_delay-0.07s.png" type="Texture" id=333]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_40_delay-0.06s.png" type="Texture" id=334]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_28_delay-0.06s.png" type="Texture" id=335]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_45_delay-0.07s.png" type="Texture" id=336]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_33_delay-0.07s.png" type="Texture" id=337]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_25_delay-0.06s.png" type="Texture" id=338]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_43_delay-0.06s.png" type="Texture" id=339]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_30_delay-0.07s.png" type="Texture" id=340]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_34_delay-0.06s.png" type="Texture" id=341]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_41_delay-0.07s.png" type="Texture" id=342]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_37_delay-0.06s.png" type="Texture" id=343]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_35_delay-0.07s.png" type="Texture" id=344]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_44_delay-0.07s.png" type="Texture" id=345]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_38_delay-0.07s.png" type="Texture" id=346]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_27_delay-0.07s.png" type="Texture" id=347]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_31_delay-0.06s.png" type="Texture" id=348]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_36_delay-0.07s.png" type="Texture" id=349]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_46_delay-0.06s.png" type="Texture" id=350]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_32_delay-0.07s.png" type="Texture" id=351]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_47_delay-0.06s.png" type="Texture" id=352]
+[ext_resource path="res://Sprites/Doc/YEAHBUTBTTV/frame_24_delay-0.07s.png" type="Texture" id=353]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 280, 80 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 1616.13, 16.6016 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 35 ), ExtResource( 33 ), ExtResource( 37 ), ExtResource( 23 ), ExtResource( 8 ), ExtResource( 36 ), ExtResource( 30 ), ExtResource( 17 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 28 ), ExtResource( 44 ), ExtResource( 20 ), ExtResource( 3 ), ExtResource( 84 ), ExtResource( 90 ), ExtResource( 48 ), ExtResource( 100 ), ExtResource( 93 ), ExtResource( 58 ), ExtResource( 89 ), ExtResource( 92 ), ExtResource( 59 ), ExtResource( 103 ), ExtResource( 102 ), ExtResource( 101 ), ExtResource( 86 ), ExtResource( 80 ), ExtResource( 75 ), ExtResource( 52 ), ExtResource( 55 ), ExtResource( 88 ), ExtResource( 99 ), ExtResource( 51 ), ExtResource( 87 ), ExtResource( 57 ), ExtResource( 104 ), ExtResource( 98 ), ExtResource( 83 ), ExtResource( 79 ), ExtResource( 53 ), ExtResource( 76 ), ExtResource( 54 ), ExtResource( 91 ), ExtResource( 73 ), ExtResource( 85 ), ExtResource( 78 ), ExtResource( 134 ), ExtResource( 115 ), ExtResource( 124 ), ExtResource( 81 ), ExtResource( 110 ), ExtResource( 82 ), ExtResource( 77 ), ExtResource( 118 ), ExtResource( 113 ), ExtResource( 130 ), ExtResource( 132 ), ExtResource( 116 ), ExtResource( 127 ), ExtResource( 131 ), ExtResource( 114 ), ExtResource( 74 ), ExtResource( 94 ), ExtResource( 129 ), ExtResource( 128 ), ExtResource( 119 ), ExtResource( 117 ), ExtResource( 105 ), ExtResource( 95 ), ExtResource( 120 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 135 ), ExtResource( 122 ), ExtResource( 136 ), ExtResource( 121 ), ExtResource( 123 ), ExtResource( 150 ), ExtResource( 139 ), ExtResource( 155 ), ExtResource( 145 ), ExtResource( 161 ), ExtResource( 164 ), ExtResource( 152 ), ExtResource( 112 ), ExtResource( 148 ), ExtResource( 107 ), ExtResource( 167 ), ExtResource( 142 ), ExtResource( 168 ), ExtResource( 151 ), ExtResource( 106 ), ExtResource( 111 ), ExtResource( 149 ), ExtResource( 125 ), ExtResource( 160 ), ExtResource( 138 ), ExtResource( 159 ), ExtResource( 147 ), ExtResource( 154 ), ExtResource( 146 ), ExtResource( 144 ), ExtResource( 126 ), ExtResource( 133 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 141 ), ExtResource( 153 ), ExtResource( 143 ), ExtResource( 165 ), ExtResource( 156 ), ExtResource( 173 ), ExtResource( 163 ), ExtResource( 158 ), ExtResource( 162 ), ExtResource( 179 ), ExtResource( 140 ), ExtResource( 157 ), ExtResource( 172 ), ExtResource( 137 ), ExtResource( 195 ), ExtResource( 166 ), ExtResource( 16 ), ExtResource( 47 ), ExtResource( 56 ), ExtResource( 29 ), ExtResource( 50 ), ExtResource( 34 ), ExtResource( 38 ), ExtResource( 31 ), ExtResource( 41 ), ExtResource( 24 ), ExtResource( 40 ), ExtResource( 22 ), ExtResource( 46 ), ExtResource( 32 ), ExtResource( 45 ), ExtResource( 26 ), ExtResource( 19 ), ExtResource( 49 ), ExtResource( 18 ), ExtResource( 42 ), ExtResource( 39 ), ExtResource( 21 ), ExtResource( 25 ), ExtResource( 27 ), ExtResource( 43 ) ],
+"loop": true,
+"name": "idle",
+"speed": 14.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 193 ), ExtResource( 169 ), ExtResource( 197 ), ExtResource( 171 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 189 ), ExtResource( 10 ), ExtResource( 180 ), ExtResource( 191 ), ExtResource( 178 ), ExtResource( 192 ), ExtResource( 188 ), ExtResource( 174 ), ExtResource( 190 ), ExtResource( 194 ), ExtResource( 170 ), ExtResource( 196 ), ExtResource( 186 ), ExtResource( 198 ), ExtResource( 205 ), ExtResource( 210 ), ExtResource( 199 ), ExtResource( 204 ), ExtResource( 182 ), ExtResource( 209 ), ExtResource( 183 ), ExtResource( 175 ), ExtResource( 181 ), ExtResource( 187 ), ExtResource( 177 ), ExtResource( 176 ), ExtResource( 184 ), ExtResource( 185 ) ],
+"loop": true,
+"name": "attack3",
+"speed": 48.0
+}, {
+"frames": [ ExtResource( 200 ), ExtResource( 208 ), ExtResource( 206 ), ExtResource( 240 ), ExtResource( 241 ), ExtResource( 228 ), ExtResource( 242 ), ExtResource( 214 ), ExtResource( 231 ), ExtResource( 203 ), ExtResource( 239 ), ExtResource( 225 ), ExtResource( 230 ), ExtResource( 211 ), ExtResource( 233 ), ExtResource( 217 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 234 ), ExtResource( 236 ), ExtResource( 201 ), ExtResource( 202 ), ExtResource( 227 ), ExtResource( 207 ), ExtResource( 226 ), ExtResource( 232 ), ExtResource( 218 ), ExtResource( 216 ), ExtResource( 229 ), ExtResource( 219 ), ExtResource( 235 ), ExtResource( 238 ), ExtResource( 223 ), ExtResource( 215 ), ExtResource( 237 ), ExtResource( 257 ), ExtResource( 272 ), ExtResource( 245 ), ExtResource( 267 ), ExtResource( 244 ), ExtResource( 265 ), ExtResource( 270 ), ExtResource( 274 ), ExtResource( 261 ), ExtResource( 266 ), ExtResource( 258 ), ExtResource( 250 ), ExtResource( 224 ), ExtResource( 256 ), ExtResource( 249 ), ExtResource( 251 ), ExtResource( 259 ), ExtResource( 262 ), ExtResource( 263 ), ExtResource( 243 ), ExtResource( 220 ), ExtResource( 254 ), ExtResource( 221 ), ExtResource( 222 ), ExtResource( 247 ), ExtResource( 252 ), ExtResource( 260 ), ExtResource( 255 ), ExtResource( 253 ), ExtResource( 271 ), ExtResource( 246 ), ExtResource( 248 ), ExtResource( 278 ), ExtResource( 292 ), ExtResource( 282 ), ExtResource( 290 ), ExtResource( 287 ), ExtResource( 276 ), ExtResource( 268 ), ExtResource( 294 ), ExtResource( 298 ), ExtResource( 277 ), ExtResource( 302 ), ExtResource( 269 ), ExtResource( 280 ), ExtResource( 275 ), ExtResource( 283 ), ExtResource( 305 ), ExtResource( 299 ), ExtResource( 291 ), ExtResource( 286 ), ExtResource( 297 ), ExtResource( 295 ), ExtResource( 281 ), ExtResource( 288 ), ExtResource( 279 ), ExtResource( 303 ), ExtResource( 264 ), ExtResource( 300 ), ExtResource( 304 ), ExtResource( 296 ), ExtResource( 301 ), ExtResource( 293 ), ExtResource( 273 ), ExtResource( 289 ), ExtResource( 285 ), ExtResource( 284 ) ],
+"loop": true,
+"name": "attack5",
+"speed": 24.0
+}, {
+"frames": [ ExtResource( 308 ), ExtResource( 326 ), ExtResource( 327 ), ExtResource( 307 ), ExtResource( 316 ), ExtResource( 310 ), ExtResource( 315 ), ExtResource( 318 ), ExtResource( 319 ), ExtResource( 328 ), ExtResource( 313 ), ExtResource( 314 ), ExtResource( 320 ), ExtResource( 309 ), ExtResource( 311 ), ExtResource( 312 ), ExtResource( 317 ), ExtResource( 322 ), ExtResource( 329 ), ExtResource( 330 ), ExtResource( 331 ), ExtResource( 325 ), ExtResource( 324 ), ExtResource( 306 ), ExtResource( 353 ), ExtResource( 338 ), ExtResource( 321 ), ExtResource( 347 ), ExtResource( 335 ), ExtResource( 323 ), ExtResource( 340 ), ExtResource( 348 ), ExtResource( 351 ), ExtResource( 337 ), ExtResource( 341 ), ExtResource( 344 ), ExtResource( 349 ), ExtResource( 343 ), ExtResource( 346 ), ExtResource( 332 ), ExtResource( 334 ), ExtResource( 342 ), ExtResource( 333 ), ExtResource( 339 ), ExtResource( 345 ), ExtResource( 336 ), ExtResource( 350 ), ExtResource( 352 ) ],
+"loop": true,
+"name": "attack4",
+"speed": 16.0
+} ]
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 134.154
+
+[node name="World" type="Node2D"]
+pause_mode = 1
+
+[node name="Pause" parent="." instance=ExtResource( 62 )]
+
+[node name="GUI" parent="." instance=ExtResource( 60 )]
+
+[node name="Player" parent="." instance=ExtResource( 61 )]
+position = Vector2( 250, 845 )
+collision_mask = 17
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Player"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Player/ParallaxBackground"]
+
+[node name="arena" type="Sprite" parent="Player/ParallaxBackground/ParallaxLayer"]
+position = Vector2( -418.835, -940.659 )
+scale = Vector2( 1.68008, 1.71463 )
+texture = ExtResource( 5 )
+centered = false
+
+[node name="Env" type="Node2D" parent="."]
+position = Vector2( 0, 496 )
+
+[node name="Env" type="TileMap" parent="Env"]
+scale = Vector2( 10, 10 )
+tile_set = ExtResource( 71 )
+cell_size = Vector2( 8, 8 )
+collision_mask = 14
+format = 1
+tile_data = PoolIntArray( -1179654, 8, 0, -1179653, 8, 0, -1179652, 8, 0, -1179651, 8, 0, -1179650, 8, 0, -1179649, 8, 0, -1245184, 1610612743, 0, -1245183, 536870917, 0, -1245182, 536870917, 0, -1245181, 536870917, 0, -1245180, 536870917, 0, -1245179, 536870917, 0, -1245178, 536870917, 0, -1245177, 536870917, 0, -1245176, 536870917, 0, -1245175, 536870917, 0, -1245174, 536870917, 0, -1245173, 536870917, 0, -1245172, 536870917, 0, -1245171, 536870917, 0, -1245170, 536870917, 0, -1245169, 536870917, 0, -1245168, 536870917, 0, -1245167, 536870917, 0, -1245166, 536870917, 0, -1245165, 536870917, 0, -1245164, 536870917, 0, -1245163, 536870917, 0, -1245162, 536870917, 0, -1245161, 536870917, 0, -1245160, 536870917, 0, -1245159, 536870917, 0, -1245158, 536870917, 0, -1245157, 536870917, 0, -1245156, 536870917, 0, -1245155, -1073741817, 0, -1245154, 8, 0, -1245153, 8, 0, -1245152, 8, 0, -1245151, 8, 0, -1245150, 8, 0, -1245149, 8, 0, -1114118, 8, 0, -1114117, 8, 0, -1114116, 8, 0, -1114115, 8, 0, -1114114, 8, 0, -1114113, 8, 0, -1179648, 1610612738, 0, -1179619, 2, 0, -1179618, 8, 0, -1179617, 8, 0, -1179616, 8, 0, -1179615, 8, 0, -1179614, 8, 0, -1179613, 8, 0, -1048582, 8, 0, -1048581, 8, 0, -1048580, 8, 0, -1048579, 8, 0, -1048578, 8, 0, -1048577, 8, 0, -1114112, 1610612738, 0, -1114083, 2, 0, -1114082, 8, 0, -1114081, 8, 0, -1114080, 8, 0, -1114079, 8, 0, -1114078, 8, 0, -1114077, 8, 0, -983046, 8, 0, -983045, 8, 0, -983044, 8, 0, -983043, 8, 0, -983042, 8, 0, -983041, 8, 0, -1048576, 1610612738, 0, -1048547, 2, 0, -1048546, 8, 0, -1048545, 8, 0, -1048544, 8, 0, -1048543, 8, 0, -1048542, 8, 0, -1048541, 8, 0, -917510, 8, 0, -917509, 8, 0, -917508, 8, 0, -917507, 8, 0, -917506, 8, 0, -917505, 8, 0, -983040, 1610612738, 0, -983011, 2, 0, -983010, 8, 0, -983009, 8, 0, -983008, 8, 0, -983007, 8, 0, -983006, 8, 0, -983005, 8, 0, -851974, 8, 0, -851973, 8, 0, -851972, 8, 0, -851971, 8, 0, -851970, 8, 0, -851969, 8, 0, -917504, 1610612738, 0, -917475, 2, 0, -917474, 8, 0, -917473, 8, 0, -917472, 8, 0, -917471, 8, 0, -917470, 8, 0, -917469, 8, 0, -786438, 8, 0, -786437, 8, 0, -786436, 8, 0, -786435, 8, 0, -786434, 8, 0, -786433, 8, 0, -851968, 1610612738, 0, -851939, 2, 0, -851938, 8, 0, -851937, 8, 0, -851936, 8, 0, -851935, 8, 0, -851934, 8, 0, -851933, 8, 0, -720902, 8, 0, -720901, 8, 0, -720900, 8, 0, -720899, 8, 0, -720898, 8, 0, -720897, 8, 0, -786432, 1610612738, 0, -786403, 2, 0, -786402, 8, 0, -786401, 8, 0, -786400, 8, 0, -786399, 8, 0, -786398, 8, 0, -786397, 8, 0, -655366, 8, 0, -655365, 8, 0, -655364, 8, 0, -655363, 1610612744, 0, -655362, 1610612744, 0, -655361, 8, 0, -720896, 1610612738, 0, -720867, 2, 0, -720866, 8, 0, -720865, 8, 0, -720864, 8, 0, -720863, 8, 0, -720862, 8, 0, -720861, 8, 0, -589830, 8, 0, -589829, 8, 0, -589828, 8, 0, -589827, 8, 0, -589826, 1610612744, 0, -589825, 8, 0, -655360, 1610612738, 0, -655331, 2, 0, -655330, 8, 0, -655329, 8, 0, -655328, 8, 0, -655327, 8, 0, -655326, 8, 0, -655325, 8, 0, -524294, 8, 0, -524293, 8, 0, -524292, 8, 0, -524291, 8, 0, -524290, 1610612744, 0, -524289, 8, 0, -589824, 1610612738, 0, -589795, 2, 0, -589794, 8, 0, -589793, 8, 0, -589792, 8, 0, -589791, 8, 0, -589790, 8, 0, -589789, 8, 0, -458758, 8, 0, -458757, 8, 0, -458756, 8, 0, -458755, 8, 0, -458754, 1610612744, 0, -458753, 8, 0, -524288, 1610612738, 0, -524259, 2, 0, -524258, 8, 0, -524257, 8, 0, -524256, 8, 0, -524255, 8, 0, -524254, 8, 0, -524253, 8, 0, -393222, 8, 0, -393221, 8, 0, -393220, 8, 0, -393219, 8, 0, -393218, 1610612744, 0, -393217, 8, 0, -458752, 1610612738, 0, -458723, 2, 0, -458722, 8, 0, -458721, 8, 0, -458720, 8, 0, -458719, 8, 0, -458718, 8, 0, -458717, 8, 0, -327686, 8, 0, -327685, 8, 0, -327684, 8, 0, -327683, 8, 0, -327682, 1610612744, 0, -327681, 8, 0, -393216, 1610612738, 0, -393187, 2, 0, -393186, 8, 0, -393185, 8, 0, -393184, 8, 0, -393183, 8, 0, -393182, 8, 0, -393181, 8, 0, -262150, 8, 0, -262149, 8, 0, -262148, 8, 0, -262147, 8, 0, -262146, 1610612744, 0, -262145, 8, 0, -327680, 1610612738, 0, -327651, 2, 0, -327650, 8, 0, -327649, 8, 0, -327648, 8, 0, -327647, 8, 0, -327646, 8, 0, -327645, 8, 0, -196614, 8, 0, -196613, 8, 0, -196612, 8, 0, -196611, 8, 0, -196610, 1610612744, 0, -196609, 8, 0, -262144, 1610612738, 0, -262115, 2, 0, -262114, 8, 0, -262113, 8, 0, -262112, 8, 0, -262111, 8, 0, -262110, 8, 0, -262109, 8, 0, -131078, 8, 0, -131077, 8, 0, -131076, 8, 0, -131075, 8, 0, -131074, 1610612744, 0, -131073, 8, 0, -196608, 1610612738, 0, -196579, 2, 0, -196578, 8, 0, -196577, 8, 0, -196576, 8, 0, -196575, 8, 0, -196574, 8, 0, -196573, 8, 0, -65542, 8, 0, -65541, 8, 0, -65540, 1610612744, 0, -65539, 1610612744, 0, -65538, 1610612744, 0, -65537, 8, 0, -131072, 1610612738, 0, -131043, 2, 0, -131042, 8, 0, -131041, 8, 0, -131040, 8, 0, -131039, 8, 0, -131038, 8, 0, -131037, 8, 0, -6, 8, 0, -5, 8, 0, -4, 1610612744, 0, -3, 1610612744, 0, -2, 1610612744, 0, -1, 8, 0, -65536, 1610612738, 0, -65507, 2, 0, -65506, 8, 0, -65505, 8, 0, -65504, 8, 0, -65503, 8, 0, -65502, 8, 0, -65501, 8, 0, 65530, 8, 0, 65531, 8, 0, 65532, 1610612744, 0, 65533, 1610612744, 0, 65534, 8, 0, 65535, 8, 0, 0, 1610612738, 0, 29, 2, 0, 30, 8, 0, 31, 8, 0, 32, 8, 0, 33, 8, 0, 34, 8, 0, 35, 8, 0, 131066, 8, 0, 131067, 8, 0, 131068, 8, 0, 131069, 11, 0, 131070, 8, 0, 131071, 8, 0, 65536, 1610612738, 0, 65565, 2, 0, 65566, 8, 0, 65567, 8, 0, 65568, 11, 0, 65569, 8, 0, 65570, 8, 0, 65571, 8, 0, 196602, 8, 0, 196603, 8, 0, 196604, 8, 0, 196605, 12, 0, 196606, 8, 0, 196607, 8, 0, 131072, 1610612738, 0, 131101, 2, 0, 131102, 8, 0, 131103, 8, 0, 131104, 12, 0, 131105, 8, 0, 131106, 8, 0, 131107, 8, 0, 262138, 8, 0, 262139, 8, 0, 262140, 8, 0, 262141, 8, 0, 262142, 8, 0, 262143, 8, 0, 196608, 1610612738, 0, 196616, 0, 0, 196617, 1, 0, 196618, 1, 0, 196619, 1, 0, 196620, 1, 0, 196621, 1, 0, 196622, 1, 0, 196623, 1, 0, 196624, 1, 0, 196625, 1, 0, 196626, 1, 0, 196627, 1, 0, 196628, 1, 0, 196629, 536870912, 0, 196637, 2, 0, 196638, 8, 0, 196639, 8, 0, 196640, 8, 0, 196641, 8, 0, 196642, 8, 0, 196643, 8, 0, 327674, 8, 0, 327675, 8, 0, 327676, 8, 0, 327677, 8, 0, 327678, 8, 0, 327679, 8, 0, 262144, 1610612738, 0, 262152, 2, 0, 262153, 8, 0, 262154, 8, 0, 262155, 8, 0, 262156, 8, 0, 262157, 8, 0, 262158, 8, 0, 262159, 8, 0, 262160, 8, 0, 262161, 8, 0, 262162, 8, 0, 262163, 1610612739, 0, 262164, 8, 0, 262165, 1610612738, 0, 262173, 2, 0, 262174, 8, 0, 262175, 8, 0, 262176, 8, 0, 262177, 8, 0, 262178, 8, 0, 262179, 8, 0, 393210, 8, 0, 393211, 8, 0, 393212, 8, 0, 393213, 8, 0, 393214, 8, 0, 393215, 8, 0, 327680, -1610612729, 0, 327681, 1, 0, 327682, 1, 0, 327683, 1, 0, 327684, 1, 0, 327685, 1, 0, 327686, 1, 0, 327687, 1, 0, 327688, 7, 0, 327689, 8, 0, 327690, 8, 0, 327691, 8, 0, 327692, 1610612739, 0, 327693, 8, 0, 327694, 8, 0, 327695, 8, 0, 327696, 8, 0, 327697, 8, 0, 327698, 8, 0, 327699, 8, 0, 327700, 8, 0, 327701, -1610612729, 0, 327702, 1, 0, 327703, 1, 0, 327704, 1, 0, 327705, 1, 0, 327706, 1, 0, 327707, 1, 0, 327708, 1, 0, 327709, 7, 0, 327710, 8, 0, 327711, 8, 0, 327712, 8, 0, 327713, 8, 0, 327714, 8, 0, 327715, 8, 0, 458746, 8, 0, 458747, 8, 0, 458748, 8, 0, 458749, 8, 0, 458750, 8, 0, 458751, 8, 0, 393216, 8, 0, 393217, 8, 0, 393218, 8, 0, 393219, 8, 0, 393220, 8, 0, 393221, 1610612739, 0, 393222, 8, 0, 393223, 8, 0, 393224, 8, 0, 393225, 8, 0, 393226, 8, 0, 393227, 8, 0, 393228, 8, 0, 393229, 8, 0, 393230, 8, 0, 393231, 8, 0, 393232, 8, 0, 393233, 8, 0, 393234, 8, 0, 393235, 8, 0, 393236, 8, 0, 393237, 8, 0, 393238, 8, 0, 393239, 8, 0, 393240, 8, 0, 393241, 8, 0, 393242, 8, 0, 393243, 8, 0, 393244, 8, 0, 393245, 8, 0, 393246, 8, 0, 393247, 8, 0, 393248, 8, 0, 393249, 8, 0, 393250, 8, 0, 393251, 8, 0, 524282, 8, 0, 524283, 8, 0, 524284, 8, 0, 524285, 8, 0, 524286, 8, 0, 524287, 8, 0, 458752, 8, 0, 458753, 8, 0, 458754, 8, 0, 458755, 8, 0, 458756, 8, 0, 458757, 8, 0, 458758, 8, 0, 458759, 8, 0, 458760, 8, 0, 458761, 8, 0, 458762, 8, 0, 458763, 8, 0, 458764, 8, 0, 458765, 8, 0, 458766, 8, 0, 458767, 8, 0, 458768, 8, 0, 458769, 1610612739, 0, 458770, 8, 0, 458771, 8, 0, 458772, 8, 0, 458773, 8, 0, 458774, 8, 0, 458775, 8, 0, 458776, 8, 0, 458777, 8, 0, 458778, 8, 0, 458779, 8, 0, 458780, 8, 0, 458781, 8, 0, 458782, 8, 0, 458783, 8, 0, 458784, 8, 0, 458785, 8, 0, 458786, 8, 0, 458787, 8, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Water" type="Area2D" parent="Env"]
+script = ExtResource( 2 )
+
+[node name="Water" type="TileMap" parent="Env/Water"]
+visible = false
+scale = Vector2( 10, 10 )
+z_index = -1
+tile_set = ExtResource( 72 )
+cell_size = Vector2( 8, 8 )
+collision_layer = 16
+collision_mask = 2
+format = 1
+tile_data = PoolIntArray( 196609, 0, 0, 196610, 1, 0, 196611, 2, 0, 196612, 0, 0, 196613, 1, 0, 196614, 2, 0, 196615, 0, 0, 196630, 0, 0, 196631, 1, 0, 196632, 2, 0, 196633, 0, 0, 196634, 1, 0, 196635, 2, 0, 196636, 0, 0, 262145, 3, 0, 262146, 3, 0, 262147, 3, 0, 262148, 3, 0, 262149, 3, 0, 262150, 3, 0, 262151, 3, 0, 262166, 3, 0, 262167, 3, 0, 262168, 3, 0, 262169, 3, 0, 262170, 3, 0, 262171, 3, 0, 262172, 3, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Env/Water"]
+visible = false
+position = Vector2( 360, 320 )
+shape = SubResource( 1 )
+disabled = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Env/Water"]
+visible = false
+position = Vector2( 2040, 320 )
+shape = SubResource( 1 )
+disabled = true
+
+[node name="Ground" type="StaticBody2D" parent="."]
+position = Vector2( 1176, 1134.6 )
+collision_layer = 32
+collision_mask = 20
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+visible = false
+position = Vector2( 34.0001, -196.75 )
+shape = SubResource( 2 )
+
+[node name="Walls" type="StaticBody2D" parent="."]
+position = Vector2( 1176, 1134.6 )
+rotation = 1.5708
+collision_layer = 64
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls"]
+visible = false
+position = Vector2( -1134.6, -1156.78 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls"]
+visible = false
+position = Vector2( -1134.6, 1105.02 )
+shape = SubResource( 2 )
+
+[node name="Doc" type="KinematicBody2D" parent="."]
+position = Vector2( 1176, -140 )
+collision_layer = 8
+collision_mask = 7
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+attacks = [ ExtResource( 67 ), ExtResource( 65 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ) ]
+specialAttack = ExtResource( 64 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Doc"]
+scale = Vector2( 2.5, 2.5 )
+frames = SubResource( 3 )
+animation = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Doc"]
+visible = false
+shape = SubResource( 4 )
+
+[node name="Stats" parent="Doc" instance=ExtResource( 66 )]
+max_health = 200
+invulnerable_time = 0.0
+
+[node name="Introduction" type="AudioStreamPlayer" parent="Doc"]
+stream = ExtResource( 15 )
+
+[node name="Attacks" type="Node" parent="Doc"]
+
+[node name="BGMPlayer" parent="." instance=ExtResource( 63 )]
+
+[node name="PlayerDeath" parent="BGMPlayer" index="0"]
+stream = ExtResource( 13 )
+
+[node name="BossDeath" parent="BGMPlayer" index="1"]
+stream = ExtResource( 14 )
+[connection signal="health_changed" from="Player/Stats" to="GUI" method="_on_Player_Stats_health_changed"]
+[connection signal="health_init" from="Player/Stats" to="GUI" method="_on_Player_Stats_health_init"]
+[connection signal="no_health" from="Player/Stats" to="GUI" method="_on_Stats_no_health"]
+[connection signal="no_health" from="Player/Stats" to="BGMPlayer" method="_on_Player_Stats_no_health"]
+[connection signal="body_entered" from="Env/Water" to="Env/Water" method="_on_Water_body_entered"]
+[connection signal="body_exited" from="Env/Water" to="Env/Water" method="_on_Water_body_exited"]
+[connection signal="health_changed" from="Doc/Stats" to="GUI" method="_on_Boss_Stats_health_changed"]
+[connection signal="health_init" from="Doc/Stats" to="GUI" method="_on_Stats_health_init"]
+[connection signal="no_health" from="Doc/Stats" to="Doc" method="_on_Stats_no_health"]
+[connection signal="no_health" from="Doc/Stats" to="BGMPlayer" method="_on_Boss_Stats_no_health"]
+
+[editable path="GUI"]
+
+[editable path="Player"]
+
+[editable path="BGMPlayer"]

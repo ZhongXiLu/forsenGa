@@ -26,10 +26,11 @@ func _ready():
         spam_instance.get_node("AnimatedSprite").play()
         get_parent().add_child(spam_instance)
         yield(get_tree().create_timer(0.7, false), "timeout")
-        spam_instance.get_node("CopyPasta").text = COPY_PASTAS[randi() % COPY_PASTAS.size()]
-        spam_instance.get_node("AnimatedSprite").visible = false
-        spam_instance.get_node("CopyPasta").visible = true
-        spam_instance.set_linear_velocity(Vector2(0, drop_speed))
-        yield(get_tree().create_timer(1, false), "timeout")
+        if weakref(spam_instance).get_ref():
+            spam_instance.get_node("CopyPasta").text = COPY_PASTAS[randi() % COPY_PASTAS.size()]
+            spam_instance.get_node("AnimatedSprite").visible = false
+            spam_instance.get_node("CopyPasta").visible = true
+            spam_instance.set_linear_velocity(Vector2(0, drop_speed))
+            yield(get_tree().create_timer(1, false), "timeout")
 
     queue_free()

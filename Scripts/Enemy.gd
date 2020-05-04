@@ -8,7 +8,6 @@ var motion = Vector2()
 func _physics_process(_delta):
     
     if !$FloorEdge.is_colliding() or $WallEdge.is_colliding():
-        print(name, " is colliding")
         scale.x = -1
         speed *= -1
 

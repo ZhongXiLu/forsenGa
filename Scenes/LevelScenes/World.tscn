@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Scenes/UIScenes/GUI.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/UIScenes/BGMPlayer.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/ObjectScenes/Player.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/EnvScenes/AutoTileMap.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/UIScenes/Pause.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Audio/BGM/Three Chain Links – Drive Fast.ogg" type="AudioStream" id=12]
+
+[node name="World" type="Node2D"]
+
+[node name="Pause" parent="." instance=ExtResource( 10 )]
+
+[node name="GUI" parent="." instance=ExtResource( 6 )]
+
+[node name="Player" parent="." instance=ExtResource( 8 )]
+
+[node name="Env" type="Node2D" parent="."]
+position = Vector2( 0, 496 )
+
+[node name="AutoTileMap" parent="Env" instance=ExtResource( 9 )]
+collision_mask = 14
+
+[node name="Cosmetics" type="Node" parent="."]
+
+[node name="BGMPlayer" parent="." instance=ExtResource( 7 )]
+stream = ExtResource( 12 )
+[connection signal="health_changed" from="Player/Stats" to="GUI" method="_on_Player_Stats_health_changed"]
+[connection signal="health_init" from="Player/Stats" to="GUI" method="_on_Player_Stats_health_init"]
+[connection signal="no_health" from="Player/Stats" to="GUI" method="_on_Player_Stats_no_health"]
+
+[editable path="Player"]
+
+[editable path="BGMPlayer"]

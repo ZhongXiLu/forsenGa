@@ -73,8 +73,6 @@ visible = false
 position = Vector2( 0, -443 )
 current = true
 zoom = Vector2( 1.6, 1.6 )
-limit_left = -500
-limit_right = 2900
 
 [node name="HitSounds" type="Node" parent="."]
 script = ExtResource( 7 )
@@ -85,5 +83,9 @@ sounds = [ ExtResource( 21 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource(
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground"]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
 [connection signal="took_damage" from="Stats" to="HitSounds" method="_on_Stats_took_damage"]

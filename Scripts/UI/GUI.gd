@@ -19,7 +19,7 @@ func _on_Player_Stats_health_changed(health):
             health_node.add_child(forsenE.instance())
 
 
-func _on_Stats_health_init(health):
+func _on_Boss_Stats_health_init(health):
     var health_node = get_node("CenterContainer/EnemyHealth")
     health_node.max_value = health
     _on_Boss_Stats_health_changed(health)
@@ -30,7 +30,7 @@ func _on_Boss_Stats_health_changed(health):
     get_node("CenterContainer/EnemyHealth/CenterContainer/EnemyHealthValue").text = str(health)
 
 
-func _on_Stats_no_health():
+func _on_Player_Stats_no_health():
     $Retry.visible = true
 
 func _on_Retry_pressed():

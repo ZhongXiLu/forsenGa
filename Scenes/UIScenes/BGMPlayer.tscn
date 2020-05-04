@@ -1,10 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://Scripts/BGMPlayer.gd" type="Script" id=1]
-[ext_resource path="res://Audio/BGM/Three Chain Links – Drive Fast.ogg" type="AudioStream" id=3]
 
 [node name="BGMPlayer" type="AudioStreamPlayer"]
-stream = ExtResource( 3 )
 autoplay = true
 script = ExtResource( 1 )
 

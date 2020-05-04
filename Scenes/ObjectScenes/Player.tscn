@@ -30,7 +30,6 @@
 [ext_resource path="res://Audio/Samples/Forsen/unlucky.wav" type="AudioStream" id=28]
 [ext_resource path="res://Audio/Samples/Forsen/vafan.wav" type="AudioStream" id=29]
 
-
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 1 ) ],
@@ -82,5 +81,9 @@ script = ExtResource( 7 )
 sounds = [ ExtResource( 21 ), ExtResource( 20 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 23 ), ExtResource( 25 ), ExtResource( 19 ), ExtResource( 26 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 27 ) ]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="HitSounds"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
 [connection signal="took_damage" from="Stats" to="HitSounds" method="_on_Stats_took_damage"]

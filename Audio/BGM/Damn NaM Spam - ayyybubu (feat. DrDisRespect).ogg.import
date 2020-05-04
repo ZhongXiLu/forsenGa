@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Damn NaM Spam - ayyybubu (feat. DrDisRespect).ogg-69a99da674b618f557ef6a838fa3b37c.oggstr"
+
+[deps]
+
+source_file="res://Audio/BGM/Damn NaM Spam - ayyybubu (feat. DrDisRespect).ogg"
+dest_files=[ "res://.import/Damn NaM Spam - ayyybubu (feat. DrDisRespect).ogg-69a99da674b618f557ef6a838fa3b37c.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

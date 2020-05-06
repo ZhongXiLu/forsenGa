@@ -359,6 +359,16 @@ animations = [ {
 "name": "idle",
 "speed": 14.0
 }, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "dead",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 193 ), ExtResource( 169 ), ExtResource( 197 ), ExtResource( 171 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 189 ), ExtResource( 10 ), ExtResource( 180 ), ExtResource( 191 ), ExtResource( 178 ), ExtResource( 192 ), ExtResource( 188 ), ExtResource( 174 ), ExtResource( 190 ), ExtResource( 194 ), ExtResource( 170 ), ExtResource( 196 ), ExtResource( 186 ), ExtResource( 198 ), ExtResource( 205 ), ExtResource( 210 ), ExtResource( 199 ), ExtResource( 204 ), ExtResource( 182 ), ExtResource( 209 ), ExtResource( 183 ), ExtResource( 175 ), ExtResource( 181 ), ExtResource( 187 ), ExtResource( 177 ), ExtResource( 176 ), ExtResource( 184 ), ExtResource( 185 ) ],
+"loop": true,
+"name": "attack3",
+"speed": 48.0
+}, {
 "frames": [ ExtResource( 308 ), ExtResource( 326 ), ExtResource( 327 ), ExtResource( 307 ), ExtResource( 316 ), ExtResource( 310 ), ExtResource( 315 ), ExtResource( 318 ), ExtResource( 319 ), ExtResource( 328 ), ExtResource( 313 ), ExtResource( 314 ), ExtResource( 320 ), ExtResource( 309 ), ExtResource( 311 ), ExtResource( 312 ), ExtResource( 317 ), ExtResource( 322 ), ExtResource( 329 ), ExtResource( 330 ), ExtResource( 331 ), ExtResource( 325 ), ExtResource( 324 ), ExtResource( 306 ), ExtResource( 353 ), ExtResource( 338 ), ExtResource( 321 ), ExtResource( 347 ), ExtResource( 335 ), ExtResource( 323 ), ExtResource( 340 ), ExtResource( 348 ), ExtResource( 351 ), ExtResource( 337 ), ExtResource( 341 ), ExtResource( 344 ), ExtResource( 349 ), ExtResource( 343 ), ExtResource( 346 ), ExtResource( 332 ), ExtResource( 334 ), ExtResource( 342 ), ExtResource( 333 ), ExtResource( 339 ), ExtResource( 345 ), ExtResource( 336 ), ExtResource( 350 ), ExtResource( 352 ) ],
 "loop": true,
 "name": "attack4",
@@ -368,16 +378,6 @@ animations = [ {
 "loop": true,
 "name": "attack5",
 "speed": 24.0
-}, {
-"frames": [ ExtResource( 193 ), ExtResource( 169 ), ExtResource( 197 ), ExtResource( 171 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 189 ), ExtResource( 10 ), ExtResource( 180 ), ExtResource( 191 ), ExtResource( 178 ), ExtResource( 192 ), ExtResource( 188 ), ExtResource( 174 ), ExtResource( 190 ), ExtResource( 194 ), ExtResource( 170 ), ExtResource( 196 ), ExtResource( 186 ), ExtResource( 198 ), ExtResource( 205 ), ExtResource( 210 ), ExtResource( 199 ), ExtResource( 204 ), ExtResource( 182 ), ExtResource( 209 ), ExtResource( 183 ), ExtResource( 175 ), ExtResource( 181 ), ExtResource( 187 ), ExtResource( 177 ), ExtResource( 176 ), ExtResource( 184 ), ExtResource( 185 ) ],
-"loop": true,
-"name": "attack3",
-"speed": 48.0
-}, {
-"frames": [ ExtResource( 4 ) ],
-"loop": true,
-"name": "dead",
-"speed": 5.0
 } ]
 
 [sub_resource type="CircleShape2D" id=2]

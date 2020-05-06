@@ -4,15 +4,20 @@ export var gravity = 60
 export var speed = 600
 
 var motion = Vector2()
+var player_in_sight = false
 
 func _physics_process(_delta):
-    if !$FloorEdge.is_colliding() or $WallEdge.is_colliding():
+    
+    if (!$FloorEdge.is_colliding() or $WallEdge.is_colliding()) and !player_in_sight:
         scale.x = -1
         speed *= -1
 
+    if player_in_sight and $WallEdge.is_colliding():
+        motion.y = -400
+
     motion.y += gravity
     motion.x = speed
-        
+    
     motion = move_and_slide_with_snap(motion, Vector2(0, -1))
 
 
@@ -23,3 +28,10 @@ func _on_Area2D_body_entered(body):
 
 func _on_Stats_no_health():
     queue_free()
+
+
+func player_in_sight(body):
+    player_in_sight = true
+
+func player_out_of_sight(body):
+    player_in_sight = false

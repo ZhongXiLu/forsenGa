@@ -7,7 +7,7 @@ export var attack_rate = 0.3
 var bullet = preload("res://Scenes/ObjectScenes/Doc/NaM.tscn")
 var has_fired = false
 var player_in_sight = false
-    
+
 func _ready():
     $AnimatedSprite.play()
     

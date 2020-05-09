@@ -7,8 +7,8 @@ export var destroy = false
 export var rngs = [0, 1]
 
 var motion = Vector2()
-var bullet = preload("res://Scenes/ObjectScenes/Doc/WaterBall.tscn")
-var bullet2 = preload("res://Scenes/ObjectScenes/Doc/WaterBall2.tscn")
+var bullet = preload("res://Scenes/ObjectScenes/Levels/Level1/Doc/WaterBall.tscn")
+var bullet2 = preload("res://Scenes/ObjectScenes/Levels/Level1/Doc/WaterBall2.tscn")
 var is_attacking = false
 onready var player = get_tree().root.get_node("World/Player")
 var direction = 1

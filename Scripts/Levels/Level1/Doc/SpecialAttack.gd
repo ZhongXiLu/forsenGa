@@ -1,6 +1,6 @@
 extends Node
 
-var albert = preload("res://Scenes/ObjectScenes/Doc/Albert.tscn")
+var albert = preload("res://Scenes/ObjectScenes/Levels/Level1/Doc/Albert.tscn")
 var albert_theme = preload("res://Audio/BGM/Welcome to the Champions Club.ogg")
 
 func _ready():

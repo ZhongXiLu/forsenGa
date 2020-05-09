@@ -3,7 +3,7 @@ extends "res://Scripts/Levels/Attack.gd"
 export var drop_speed = 1500
 export var width_arena = 1100
 
-var spam = preload("res://Scenes/ObjectScenes/Doc/Spam.tscn")
+var spam = preload("res://Scenes/ObjectScenes/Levels/Level1/Doc/Spam.tscn")
 
 # Probably not a good idea to hardcode copy pasta's but eShrug
 const COPY_PASTAS = [

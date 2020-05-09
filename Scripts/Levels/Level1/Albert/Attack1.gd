@@ -3,7 +3,7 @@ extends "res://Scripts/Levels/Attack.gd"
 
 export var bullet_speed = 600
 
-var bullet = preload("res://Scenes/ObjectScenes/Doc/Card.tscn")
+var bullet = preload("res://Scenes/ObjectScenes/Levels/Level1/Doc/Card.tscn")
 
 func _ready():
     

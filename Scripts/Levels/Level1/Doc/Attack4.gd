@@ -2,7 +2,7 @@ extends "res://Scripts/Levels/Attack.gd"
 
 export var gravity = 60
 
-var ZULUL = preload("res://Scenes/ObjectScenes/Doc/ZULUL.tscn")
+var ZULUL = preload("res://Scenes/ObjectScenes/Levels/Level1/Doc/ZULUL.tscn")
 
 func spawn_ad(old_position, sprite_size_offset):
     var ad_instance = ZULUL.instance()

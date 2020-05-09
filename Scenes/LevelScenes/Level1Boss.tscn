@@ -369,15 +369,15 @@ animations = [ {
 "name": "attack5",
 "speed": 24.0
 }, {
-"frames": [ ExtResource( 4 ) ],
-"loop": true,
-"name": "dead",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 193 ), ExtResource( 169 ), ExtResource( 197 ), ExtResource( 171 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 189 ), ExtResource( 10 ), ExtResource( 180 ), ExtResource( 191 ), ExtResource( 178 ), ExtResource( 192 ), ExtResource( 188 ), ExtResource( 174 ), ExtResource( 190 ), ExtResource( 194 ), ExtResource( 170 ), ExtResource( 196 ), ExtResource( 186 ), ExtResource( 198 ), ExtResource( 205 ), ExtResource( 210 ), ExtResource( 199 ), ExtResource( 204 ), ExtResource( 182 ), ExtResource( 209 ), ExtResource( 183 ), ExtResource( 175 ), ExtResource( 181 ), ExtResource( 187 ), ExtResource( 177 ), ExtResource( 176 ), ExtResource( 184 ), ExtResource( 185 ) ],
 "loop": true,
 "name": "attack3",
 "speed": 48.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "dead",
+"speed": 5.0
 } ]
 
 [sub_resource type="CircleShape2D" id=2]

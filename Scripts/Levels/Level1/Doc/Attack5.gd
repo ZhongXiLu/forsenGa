@@ -1,6 +1,6 @@
 extends "res://Scripts/Levels/Attack.gd"
 
-var dolphin = preload("res://Scenes/ObjectScenes/Doc/Dolphin.tscn")
+var dolphin = preload("res://Scenes/ObjectScenes/Levels/Level1/Doc/Dolphin.tscn")
 var dolphin_instances = []
 
 const SPAWN_POSITIONS = [[Vector2(2040, 816), false], [Vector2(360, 816), true]]

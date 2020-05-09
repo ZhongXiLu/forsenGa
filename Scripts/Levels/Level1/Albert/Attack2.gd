@@ -4,7 +4,7 @@ extends "res://Scripts/Levels/Attack.gd"
 export var bullet_speed = 600
 
 const POSITIONS = [-1000, 3500]    # left and right to the arena
-var bullet = preload("res://Scenes/ObjectScenes/Doc/Card.tscn")
+var bullet = preload("res://Scenes/ObjectScenes/Levels/Level1/Doc/Card.tscn")
 
 func _ready():
     

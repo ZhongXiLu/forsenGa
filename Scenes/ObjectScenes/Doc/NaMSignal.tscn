@@ -5,9 +5,11 @@
 [ext_resource path="res://Sprites/Doc/NaMSignal/frame_3_delay-0.33s.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/Doc/NaMSignal/frame_0_delay-0.33s.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/Doc/NaMSignal/frame_1_delay-0.33s.png" type="Texture" id=5]
-[ext_resource path="res://Scripts/Attacks/Doc/NaMSignal.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/Levels/Level1/NaMSignal.gd" type="Script" id=6]
 [ext_resource path="res://Scenes/ObjectScenes/Stats.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/TitleFont.tres" type="DynamicFont" id=8]
+
+
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {

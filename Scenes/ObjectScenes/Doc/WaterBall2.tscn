@@ -1,7 +1,10 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Sprites/Doc/waterball.png" type="Texture" id=1]
-[ext_resource path="res://Scripts/Attacks/Doc/WaterBall2.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Levels/Level1/Doc/WaterBall2.gd" type="Script" id=2]
+
+
+
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 11.6056

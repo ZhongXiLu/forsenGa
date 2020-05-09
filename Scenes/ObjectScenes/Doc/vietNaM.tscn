@@ -1,8 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Sprites/Doc/vietNaM.png" type="Texture" id=1]
-[ext_resource path="res://Scripts/Attacks/Doc/vietNaM.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Levels/Level1/vietNaM.gd" type="Script" id=2]
 [ext_resource path="res://Scenes/ObjectScenes/Stats.tscn" type="PackedScene" id=3]
+
+
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 23.9079

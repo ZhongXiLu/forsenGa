@@ -1,7 +1,10 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Scripts/Attacks/Doc/SpecialAttack.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Levels/Level1/Doc/SpecialAttack.gd" type="Script" id=1]
 [ext_resource path="res://Audio/Samples/Doc/albert.wav" type="AudioStream" id=2]
+
+
+
 
 [node name="SpecialAttack" type="Node2D"]
 script = ExtResource( 1 )

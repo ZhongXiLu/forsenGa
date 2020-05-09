@@ -1,4 +1,4 @@
-extends "res://Scripts/Attacks/Attack.gd"
+extends "res://Scripts/Levels/Attack.gd"
 
 export var initial_bullet_speed = 200
 export var bullet_speed = 3000

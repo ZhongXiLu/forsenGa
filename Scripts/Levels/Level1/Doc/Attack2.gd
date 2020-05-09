@@ -1,4 +1,4 @@
-extends "res://Scripts/Attacks/Attack.gd"
+extends "res://Scripts/Levels/Attack.gd"
 
 export var drop_speed = 1500
 export var width_arena = 1100

@@ -1,4 +1,4 @@
-extends "res://Scripts/Attacks/Attack.gd"
+extends "res://Scripts/Levels/Attack.gd"
 
 var dolphin = preload("res://Scenes/ObjectScenes/Doc/Dolphin.tscn")
 var dolphin_instances = []

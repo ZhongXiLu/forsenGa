@@ -1,9 +1,11 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Scripts/Attacks/Doc/Albert/Albert.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Levels/Level1/Albert/Albert.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/AttackScenes/Doc/Albert/Attack1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/AttackScenes/Doc/Albert/Attack2.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Sprites/Doc/albertCD.png" type="Texture" id=4]
+
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 91.6653, 90.6169 )

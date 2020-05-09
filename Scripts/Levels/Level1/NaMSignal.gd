@@ -4,7 +4,7 @@ export var bullet_speed = 800
 export var fire_rate = 0.2
 export var attack_rate = 0.3
 
-var bullet = preload("res://Scenes/ObjectScenes/Doc/NaM.tscn")
+var bullet = preload("res://Scenes/ObjectScenes/Levels/Level1/NaM.tscn")
 var has_fired = false
 var player_in_sight = false
 

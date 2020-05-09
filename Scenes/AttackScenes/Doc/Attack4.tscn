@@ -3,9 +3,6 @@
 [ext_resource path="res://Scripts/Levels/Level1/Doc/Attack4.gd" type="Script" id=1]
 [ext_resource path="res://Audio/Samples/Doc/bttv.wav" type="AudioStream" id=2]
 
-
-
-
 [node name="Attack4" type="Node2D"]
 script = ExtResource( 1 )
 

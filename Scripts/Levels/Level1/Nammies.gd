@@ -5,7 +5,7 @@ export var speed = 600
 export var bullet_speed = 800
 export var fire_rate = 0.05
 
-var bullet = preload("res://Scenes/ObjectScenes/Doc/NaM.tscn")
+var bullet = preload("res://Scenes/ObjectScenes/Levels/Level1/NaM.tscn")
 var motion = Vector2()
 var player_in_sight = false
 var has_fired = false
@@ -16,15 +16,16 @@ func _ready():
 
 
 func _physics_process(_delta):
+    motion.x = 0
+    motion.y += gravity
     if !player_in_sight:
         if !$FloorEdge.is_colliding() or $WallEdge.is_colliding():
             scale.x = -1
             speed *= -1
     
-        motion.y += gravity
         motion.x = speed
             
-        motion = move_and_slide_with_snap(motion, Vector2(0, -1))
+    motion = move_and_slide_with_snap(motion, Vector2(0, -1))
 
 
 func _process(delta):
